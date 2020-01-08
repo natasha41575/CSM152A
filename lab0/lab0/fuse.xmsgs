@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/152/Desktop/CSM152A/lab0/lab0/../lab0.v" Line 21: &lt;<arg fmt="%s" index="1">rst</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/152/Desktop/CSM152A/lab0/lab0/../lab0.v" Line 30: &lt;<arg fmt="%s" index="1">b</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/152/Desktop/CSM152A/lab0/lab0/../lab0.v" Line 43: &lt;<arg fmt="%s" index="1">b</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/152/Desktop/CSM152A/lab0/lab0/../lab0.v" Line 44: &lt;<arg fmt="%s" index="1">b</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/152/Desktop/CSM152A/lab0/lab0/../lab0.v" Line 47: &lt;<arg fmt="%s" index="1">b</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"C:/Users/152/Desktop/CSM152A/lab0/lab0/../lab0.v" Line 2: Module &lt;<arg fmt="%s" index="1">led</arg>&gt; ignored due to previous errors.
+</msg>
+
+</messages>
+

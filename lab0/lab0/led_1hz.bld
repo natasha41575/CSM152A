@@ -1,0 +1,48 @@
+Release 14.6 ngdbuild P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc
+C:/Users/152/Desktop/CSM152A/lab0/lab0.ucf -uc
+C:/Users/152/Desktop/CSM152A/lab0/led_1hz.ucf -p xc6slx16-csg324-3 led_1hz.ngc
+led_1hz.ngd
+
+Reading NGO file "C:/Users/152/Desktop/CSM152A/lab0/lab0/led_1hz.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"C:/Users/152/Desktop/CSM152A/lab0/lab0.ucf" ...
+Annotating constraints to design from ucf file
+"C:/Users/152/Desktop/CSM152A/lab0/led_1hz.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:NgdBuild:1345 - The constraint <TIMESPEC TS_sys_clk_pin = PERIOD
+   sys_clk_pin 100000 kHz;> [C:/Users/152/Desktop/CSM152A/lab0/lab0.ucf(9)] is
+   overridden by the constraint <TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin
+   100000 kHz;> [C:/Users/152/Desktop/CSM152A/lab0/led_1hz.ucf(9)]. The
+   overriden constraint usually comes from the input netlist or ncf files.
+   Please set XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR to promote this message to an
+   error.
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Total memory usage is 162148 kilobytes
+
+Writing NGD file "led_1hz.ngd" ...
+Total REAL time to NGDBUILD completion:  4 sec
+Total CPU time to NGDBUILD completion:   4 sec
+
+Writing NGDBUILD log file "led_1hz.bld"...

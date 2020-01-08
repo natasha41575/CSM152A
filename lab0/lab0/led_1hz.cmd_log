@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "C:/Users/152/Desktop/CSM152A/lab0/lab0/led_1hz.xst" -ofn "C:/Users/152/Desktop/CSM152A/lab0/lab0/led_1hz.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/CSM152A/lab0/lab0/led_1hz.xst" -ofn "C:/Users/152/Desktop/CSM152A/lab0/lab0/led_1hz.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/CSM152A/lab0/lab0/led_1hz.xst" -ofn "C:/Users/152/Desktop/CSM152A/lab0/lab0/led_1hz.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/CSM152A/lab0/lab0/led_1hz.xst" -ofn "C:/Users/152/Desktop/CSM152A/lab0/lab0/led_1hz.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/CSM152A/lab0/lab0/led_1hz.xst" -ofn "C:/Users/152/Desktop/CSM152A/lab0/lab0/led_1hz.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/CSM152A/lab0/lab0/led_1hz.xst" -ofn "C:/Users/152/Desktop/CSM152A/lab0/lab0/led_1hz.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/152/Desktop/CSM152A/lab0/lab0.ucf -uc C:/Users/152/Desktop/CSM152A/lab0/led_1hz.ucf -p xc6slx16-csg324-3 led_1hz.ngc led_1hz.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_1hz_map.ncd led_1hz.ngd led_1hz.pcf 
+par -w -intstyle ise -ol high -mt off led_1hz_map.ncd led_1hz.ncd led_1hz.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml led_1hz.twx led_1hz.ncd -o led_1hz.twr led_1hz.pcf 
+bitgen -intstyle ise -f led_1hz.ut led_1hz.ncd 

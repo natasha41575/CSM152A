@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/152/Desktop/CSM152A/lab0/lab0/counter_isim_beh.exe" -prj "C:/Users/152/Desktop/CSM152A/lab0/lab0/counter_beh.prj" "counter" "work.glbl" 

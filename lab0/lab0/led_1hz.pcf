@@ -1,0 +1,16 @@
+//! **************************************************************************
+// Written by: Map P.68d on Wed Jan 08 13:33:18 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led" LOCATE = SITE "U16" LEVEL 1;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "rst" LOCATE = SITE "T10" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "b_0" BEL "led" BEL "b_1" BEL "b_2" BEL "b_5" BEL
+        "b_3" BEL "b_4" BEL "b_6" BEL "b_7" BEL "b_8" BEL "b_9" BEL "b_12" BEL
+        "b_10" BEL "b_11" BEL "b_13" BEL "b_14" BEL "b_15" BEL "b_16" BEL
+        "b_19" BEL "b_17" BEL "b_18" BEL "b_22" BEL "b_20" BEL "b_21" BEL
+        "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+
