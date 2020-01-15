@@ -1,26 +1,25 @@
-Running: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/152/CSM152A/lab1/lab1/fpcvt_tb_isim_beh.exe -prj C:/Users/152/CSM152A/lab1/lab1/fpcvt_tb_beh.prj work.fpcvt_tb work.glbl 
+Running: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/152/Desktop/CSM152A/lab1/lab1/fpcvt_tb_isim_beh.exe -prj C:/Users/152/Desktop/CSM152A/lab1/lab1/fpcvt_tb_beh.prj work.fpcvt_tb work.glbl 
 ISim P.68d (signature 0x7708f090)
 Number of CPUs detected in this system: 2
 Turning on mult-threading, number of parallel sub-compilation jobs: 4 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Users/152/CSM152A/lab1/lab1/../lab1.v" into library work
-ERROR:HDLCompiler:1660 - "C:/Users/152/CSM152A/lab1/lab1/../lab1.v" Line 14: Procedural assignment to a non-register s is not permitted, left-hand side should be reg/integer/time/genvar
-ERROR:HDLCompiler:1660 - "C:/Users/152/CSM152A/lab1/lab1/../lab1.v" Line 19: Procedural assignment to a non-register e is not permitted, left-hand side should be reg/integer/time/genvar
-ERROR:HDLCompiler:1660 - "C:/Users/152/CSM152A/lab1/lab1/../lab1.v" Line 19: Procedural assignment to a non-register e is not permitted, left-hand side should be reg/integer/time/genvar
-ERROR:HDLCompiler:1660 - "C:/Users/152/CSM152A/lab1/lab1/../lab1.v" Line 20: Procedural assignment to a non-register f is not permitted, left-hand side should be reg/integer/time/genvar
-ERROR:HDLCompiler:1660 - "C:/Users/152/CSM152A/lab1/lab1/../lab1.v" Line 20: Procedural assignment to a non-register f is not permitted, left-hand side should be reg/integer/time/genvar
-ERROR:HDLCompiler:1660 - "C:/Users/152/CSM152A/lab1/lab1/../lab1.v" Line 25: Procedural assignment to a non-register d is not permitted, left-hand side should be reg/integer/time/genvar
-ERROR:HDLCompiler:1660 - "C:/Users/152/CSM152A/lab1/lab1/../lab1.v" Line 25: Procedural assignment to a non-register d is not permitted, left-hand side should be reg/integer/time/genvar
-ERROR:HDLCompiler:1660 - "C:/Users/152/CSM152A/lab1/lab1/../lab1.v" Line 35: Procedural assignment to a non-register e is not permitted, left-hand side should be reg/integer/time/genvar
-ERROR:HDLCompiler:1660 - "C:/Users/152/CSM152A/lab1/lab1/../lab1.v" Line 35: Procedural assignment to a non-register e is not permitted, left-hand side should be reg/integer/time/genvar
-ERROR:HDLCompiler:1660 - "C:/Users/152/CSM152A/lab1/lab1/../lab1.v" Line 36: Procedural assignment to a non-register f is not permitted, left-hand side should be reg/integer/time/genvar
-ERROR:HDLCompiler:1660 - "C:/Users/152/CSM152A/lab1/lab1/../lab1.v" Line 36: Procedural assignment to a non-register f is not permitted, left-hand side should be reg/integer/time/genvar
-ERROR:HDLCompiler:1660 - "C:/Users/152/CSM152A/lab1/lab1/../lab1.v" Line 41: Procedural assignment to a non-register e is not permitted, left-hand side should be reg/integer/time/genvar
-ERROR:HDLCompiler:1660 - "C:/Users/152/CSM152A/lab1/lab1/../lab1.v" Line 41: Procedural assignment to a non-register e is not permitted, left-hand side should be reg/integer/time/genvar
-ERROR:HDLCompiler:1660 - "C:/Users/152/CSM152A/lab1/lab1/../lab1.v" Line 42: Procedural assignment to a non-register f is not permitted, left-hand side should be reg/integer/time/genvar
-ERROR:HDLCompiler:1660 - "C:/Users/152/CSM152A/lab1/lab1/../lab1.v" Line 42: Procedural assignment to a non-register f is not permitted, left-hand side should be reg/integer/time/genvar
-ERROR:HDLCompiler:1660 - "C:/Users/152/CSM152A/lab1/lab1/../lab1.v" Line 46: Procedural assignment to a non-register e is not permitted, left-hand side should be reg/integer/time/genvar
-ERROR:HDLCompiler:1660 - "C:/Users/152/CSM152A/lab1/lab1/../lab1.v" Line 46: Procedural assignment to a non-register e is not permitted, left-hand side should be reg/integer/time/genvar
-ERROR:HDLCompiler:1660 - "C:/Users/152/CSM152A/lab1/lab1/../lab1.v" Line 47: Procedural assignment to a non-register f is not permitted, left-hand side should be reg/integer/time/genvar
-ERROR:HDLCompiler:1660 - "C:/Users/152/CSM152A/lab1/lab1/../lab1.v" Line 47: Procedural assignment to a non-register f is not permitted, left-hand side should be reg/integer/time/genvar
-Sorry, too many errors..
+Analyzing Verilog file "C:/Users/152/Desktop/CSM152A/lab1/lab1/sign_magnitude.v" into library work
+Analyzing Verilog file "C:/Users/152/Desktop/CSM152A/lab1/lab1/round.v" into library work
+Analyzing Verilog file "C:/Users/152/Desktop/CSM152A/lab1/lab1/priority_encoder.v" into library work
+Analyzing Verilog file "C:/Users/152/Desktop/CSM152A/lab1/lab1/../lab1.v" into library work
+Analyzing Verilog file "C:/Users/152/Desktop/CSM152A/lab1/lab1/../lab1_TB.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module sign_magnitude
+Compiling module priority_encoder
+Compiling module round
+Compiling module fpcvt
+Compiling module fpcvt_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 6 Verilog Units
+Built simulation executable C:/Users/152/Desktop/CSM152A/lab1/lab1/fpcvt_tb_isim_beh.exe
+Fuse Memory Usage: 27504 KB
+Fuse CPU Usage: 654 ms

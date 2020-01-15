@@ -1,0 +1,3 @@
+verilog work "../../../UCLA-CS-M152A/Lab 2/Floating Point Conversion/fp_converter.v"
+verilog work "../../../UCLA-CS-M152A/Lab 2/Floating Point Conversion/fp_converter_TB.v"
+verilog work "C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v"

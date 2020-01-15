@@ -1,3 +1,6 @@
+verilog work "sign_magnitude.v"
+verilog work "round.v"
+verilog work "priority_encoder.v"
 verilog work "../lab1.v"
 verilog work "../lab1_TB.v"
 verilog work "C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v"
