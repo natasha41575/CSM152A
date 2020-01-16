@@ -21,7 +21,7 @@ always @ (*)
 				// If Significand Doesn't Overflow
 				if(f_input != 4'b1111)
 					begin
-						f_output = f_output + 1;
+						f_output = f_input + 1;
 						e_output = e_input;
 					end
 				// If Significand Overflows
