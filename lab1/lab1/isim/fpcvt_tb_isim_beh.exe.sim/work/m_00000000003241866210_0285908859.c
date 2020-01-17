@@ -21,12 +21,12 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/152/Desktop/CSM152A/lab1/lab1/sign_magnitude.v";
+static const char *ng0 = "C:/Users/152/Desktop/CSM152A/lab1/lab1.v";
 static unsigned int ng1[] = {1U, 0U};
 
 
 
-static void Cont_10_0(char *t0)
+static void Cont_40_0(char *t0)
 {
     char t4[8];
     char *t1;
@@ -61,7 +61,7 @@ LAB0:    t1 = (t0 + 2528U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(10, ng0);
+LAB2:    xsi_set_current_line(40, ng0);
     t2 = (t0 + 1048U);
     t3 = *((char **)t2);
     memset(t4, 0, 8);
@@ -100,7 +100,7 @@ LAB2:    xsi_set_current_line(10, ng0);
 LAB1:    return;
 }
 
-static void Cont_13_1(char *t0)
+static void Cont_43_1(char *t0)
 {
     char t3[8];
     char t4[8];
@@ -167,7 +167,7 @@ LAB0:    t1 = (t0 + 2776U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(13, ng0);
+LAB2:    xsi_set_current_line(43, ng0);
     t2 = (t0 + 1048U);
     t5 = *((char **)t2);
     memset(t6, 0, 8);
@@ -291,7 +291,7 @@ LAB18:    t31 = *((unsigned int *)t25);
 
 extern void work_m_00000000003241866210_0285908859_init()
 {
-	static char *pe[] = {(void *)Cont_10_0,(void *)Cont_13_1};
+	static char *pe[] = {(void *)Cont_40_0,(void *)Cont_43_1};
 	xsi_register_didat("work_m_00000000003241866210_0285908859", "isim/fpcvt_tb_isim_beh.exe.sim/work/m_00000000003241866210_0285908859.didat");
 	xsi_register_executes(pe);
 }

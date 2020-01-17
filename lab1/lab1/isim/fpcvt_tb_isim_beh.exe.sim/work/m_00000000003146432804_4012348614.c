@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/152/Desktop/CSM152A/lab1/lab1/priority_encoder.v";
+static const char *ng0 = "C:/Users/152/Desktop/CSM152A/lab1/lab1.v";
 static unsigned int ng1[] = {7U, 0U};
 static unsigned int ng2[] = {6U, 0U};
 static unsigned int ng3[] = {5U, 0U};
@@ -41,7 +41,7 @@ static int ng16[] = {0, 0};
 
 
 
-static void Cont_10_0(char *t0)
+static void Cont_56_0(char *t0)
 {
     char t3[8];
     char t4[8];
@@ -322,7 +322,7 @@ LAB0:    t1 = (t0 + 2688U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(10, ng0);
+LAB2:    xsi_set_current_line(56, ng0);
     t2 = (t0 + 1048U);
     t5 = *((char **)t2);
     memset(t6, 0, 8);
@@ -923,7 +923,7 @@ LAB106:    memcpy(t229, t252, 8);
 
 }
 
-static void Cont_19_1(char *t0)
+static void Cont_65_1(char *t0)
 {
     char t3[8];
     char t4[8];
@@ -1245,7 +1245,7 @@ LAB0:    t1 = (t0 + 2936U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(19, ng0);
+LAB2:    xsi_set_current_line(65, ng0);
     t2 = (t0 + 1048U);
     t5 = *((char **)t2);
     memset(t6, 0, 8);
@@ -1920,7 +1920,7 @@ LAB105:    memcpy(t252, t275, 8);
 
 }
 
-static void Cont_29_2(char *t0)
+static void Cont_75_2(char *t0)
 {
     char t3[8];
     char t4[8];
@@ -2205,7 +2205,7 @@ LAB0:    t1 = (t0 + 3184U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(29, ng0);
+LAB2:    xsi_set_current_line(75, ng0);
     t2 = (t0 + 1048U);
     t5 = *((char **)t2);
     memset(t6, 0, 8);
@@ -2813,7 +2813,7 @@ LAB105:    memcpy(t228, t253, 8);
 
 extern void work_m_00000000003146432804_4012348614_init()
 {
-	static char *pe[] = {(void *)Cont_10_0,(void *)Cont_19_1,(void *)Cont_29_2};
+	static char *pe[] = {(void *)Cont_56_0,(void *)Cont_65_1,(void *)Cont_75_2};
 	xsi_register_didat("work_m_00000000003146432804_4012348614", "isim/fpcvt_tb_isim_beh.exe.sim/work/m_00000000003146432804_4012348614.didat");
 	xsi_register_executes(pe);
 }

@@ -15,30 +15,26 @@ wire [3:0] f;
 // wires
 fpcvt UUT 	(.d(d), .s(s), .e(e), .f(f));
 
-//initial
-//begin
-//        $dumpfile("fpcvt.vcd");
-//        $dumpvars(2, fpcvt_tb.UUT);
-//end
-
 // IMPORTANT: Initialize all inputs. Otherwise the default value of register
 // will be don't care (x).
 initial
 	begin
-		d = 20;
-		$display(s);
+		d = 12'b0000_0100_0011;		// 67 ->  8'b0011_1000
 		#100;
-		d = 50;
+		d = 12'b0111_0100_0000;		// 1856 ->  8'b0111_1111
 		#100;
-		d = 69;
+		d = 12'b0111_1111_1111;		// 2047 ->  8'b0111_1111 
 		#100;
-		d = 420;
+		d = 12'b1000_0000_0010;		// -2046 ->  8'b1111_1111 
+		#100;
+		d = 12'b1001_1100_1111;		// -1585 ->  8'b1111_1100
+		#100;
+		d = 12'b1111_1010_0101;		// -91 ->	8'b1011_1011
+		#100;
+		d = -2048;					// Tmin -> 8'b1111_1111
+		#100;
+		d =  2047;					// Tmax -> 8'b0111_1111
 		#100;
 	end
-
-// Use an always block to generate all the test cases
-//always
-//	#10 
-//	d = d + 1;
 
 endmodule

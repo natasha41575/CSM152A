@@ -12,5 +12,4 @@ Time resolution is 1 ps
 # wave add /
 # run all
 Simulator is doing circuit initialization process.
-x
 Finished circuit initialization process.
