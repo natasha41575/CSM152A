@@ -636,8 +636,8 @@ Primitive and Black Box Usage:
 #      GND                         : 1
 #      INV                         : 3
 #      LUT1                        : 23
-#      LUT2                        : 22
-#      LUT3                        : 18
+#      LUT2                        : 21
+#      LUT3                        : 19
 #      LUT4                        : 28
 #      LUT5                        : 54
 #      LUT6                        : 153
@@ -733,7 +733,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 6.909ns (frequency: 144.739MHz)
-  Total number of paths / destination ports: 35383 / 451
+  Total number of paths / destination ports: 35447 / 451
 -------------------------------------------------------------------------
 Delay:               6.909ns (Levels of Logic = 3)
   Source:            inst_wd_5 (FF)
@@ -809,11 +809,11 @@ clk            |    6.909|         |         |         |
 
 
 Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.52 secs
+Total CPU time to Xst completion: 10.59 secs
  
 --> 
 
-Total memory usage is 262268 kilobytes
+Total memory usage is 261372 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   73 (   0 filtered)
