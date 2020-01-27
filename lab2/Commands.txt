@@ -1,0 +1,16 @@
+CSM152A Lab 2
+-------------
+
+Instruction         Binary 
+-----------         ---------
+PUSH R0 0x4         0000 0100
+PUSH R0 0x0         0000 0000
+PUSH R1 0x3         0001 0011
+ADD R0 R2 R2        0100 1010
+ADD R0 R2 R2        0100 1010
+ADD R0 R2 R2        0100 1010
+ADD R2 R0 R3        0110 0011
+SEND R0             1100 0000
+SEND R2             1110 0000
+SEND R3             1111 0000
+
