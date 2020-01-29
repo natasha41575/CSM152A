@@ -2,7 +2,7 @@ module seq (/*AUTOARG*/
    // Outputs
    o_tx_data, o_tx_valid,
    // Inputs
-   i_tx_busy, i_inst, i_inst_valid, clk, rst
+   i_tx_busy, i_inst, i_inst_valid, i_inst_valid_send, clk, rst
    );
 
 `include "seq_definitions.v"
@@ -15,6 +15,7 @@ module seq (/*AUTOARG*/
    // Instruction interface
    input [seq_in_width-1:0]  i_inst;
    input                     i_inst_valid;
+   input					 i_inst_valid_send;
 
    input                     clk;
    input                     rst;
@@ -64,7 +65,7 @@ module seq (/*AUTOARG*/
 
    assign rf_wsel = inst_op_push ? inst_ra : inst_rc;
    assign rf_wstb = alu_valid;
-      
+	
    seq_rf rf_ (// Outputs
                .o_data_a                (rf_data_a[alu_width-1:0]),
                .o_data_b                (rf_data_b[alu_width-1:0]),
@@ -104,6 +105,7 @@ module seq (/*AUTOARG*/
    // ===========================================================================
 
    assign o_tx_data  = rf_data_a[seq_dp_width-1:0];
-   assign o_tx_valid = i_inst_valid & inst_op_send & ~i_tx_busy;
+   assign o_tx_valid = (i_inst_valid & inst_op_send & ~i_tx_busy) ||
+					   (i_inst_valid_send & ~i_tx_busy);
    
 endmodule // seq
