@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.68d on Wed Jan 29 12:46:59 2020
+// Written by: Map P.68d on Thu Jan 30 17:32:41 2020
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -48,8 +48,9 @@ TIMEGRP sys_clk_pin = BEL "arst_ff_0" BEL "arst_ff_1" BEL "clk_en" BEL
         "uart_top_/tx_data_5" BEL "uart_top_/tx_data_4" BEL
         "uart_top_/tx_data_3" BEL "uart_top_/tx_data_2" BEL
         "uart_top_/tx_data_1" BEL "uart_top_/tx_data_0" BEL
-        "uart_top_/tfifo_rd_z" BEL "uart_top_/state_2" BEL "uart_top_/state_1"
-        BEL "uart_top_/state_0" BEL "uart_top_/uart_/tx_bits_remaining_3" BEL
+        "uart_top_/state_3" BEL "uart_top_/state_2" BEL "uart_top_/state_1"
+        BEL "uart_top_/state_0" BEL "uart_top_/tfifo_rd_z" BEL
+        "uart_top_/uart_/tx_bits_remaining_3" BEL
         "uart_top_/uart_/tx_bits_remaining_2" BEL
         "uart_top_/uart_/tx_bits_remaining_1" BEL
         "uart_top_/uart_/tx_bits_remaining_0" BEL
@@ -104,8 +105,8 @@ TIMEGRP sys_clk_pin = BEL "arst_ff_0" BEL "arst_ff_1" BEL "clk_en" BEL
         "seq_/rf_/rf_3_8" BEL "seq_/rf_/rf_3_7" BEL "seq_/rf_/rf_3_6" BEL
         "seq_/rf_/rf_3_5" BEL "seq_/rf_/rf_3_4" BEL "seq_/rf_/rf_3_3" BEL
         "seq_/rf_/rf_3_2" BEL "seq_/rf_/rf_3_1" BEL "seq_/rf_/rf_3_0" BEL
-        "uart_top_/uart_/tx_out" BEL "clk_BUFGP/BUFG" PIN
-        "uart_top_/tfifo_/Mram_mem_pins<20>" PIN
+        "uart_top_/tx_reg_0" BEL "uart_top_/uart_/tx_out" BEL "clk_BUFGP/BUFG"
+        PIN "uart_top_/tfifo_/Mram_mem_pins<20>" PIN
         "uart_top_/tfifo_/Mram_mem_pins<21>";
 TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
 SCHEMATIC END;

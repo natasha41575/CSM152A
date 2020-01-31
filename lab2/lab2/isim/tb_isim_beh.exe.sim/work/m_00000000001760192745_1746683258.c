@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/152/Documents/CSM152A/lab2/tb/model_uart.v";
+static const char *ng0 = "C:/Users/152/Desktop/CSM152A/lab2/tb/model_uart.v";
 static unsigned int ng1[] = {0U, 0U};
 static unsigned int ng2[] = {1U, 0U};
 static int ng3[] = {0, 0};
@@ -325,10 +325,10 @@ LAB6:    xsi_set_current_line(36, ng0);
     t7 = (~(t6));
     t8 = *((unsigned int *)t2);
     t9 = (t8 & t7);
-    t4 = (t0 + 7604);
+    t4 = (t0 + 7600);
     *((int *)t4) = t9;
 
-LAB7:    t5 = (t0 + 7604);
+LAB7:    t5 = (t0 + 7600);
     if (*((int *)t5) > 0)
         goto LAB8;
 
@@ -428,7 +428,7 @@ LAB11:    xsi_set_current_line(38, ng0);
     xsi_vlogtype_concat(t12, 8, 8, 2U, t17, 1, t13, 7);
     t11 = (t0 + 2880);
     xsi_vlogvar_assign_value(t11, t12, 0, 0, 8);
-    t2 = (t0 + 7604);
+    t2 = (t0 + 7600);
     t9 = *((int *)t2);
     *((int *)t2) = (t9 - 1);
     goto LAB7;

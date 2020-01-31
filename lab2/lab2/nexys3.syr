@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Reading design: nexys3.prj
 
@@ -105,42 +105,42 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\152\Documents\CSM152A\lab2\rtl\seq_add.v" into library work
-Parsing verilog file "C:\Users\152\Documents\CSM152A\lab2\rtl\/seq_definitions.v" included at line 1.
-WARNING:HDLCompiler:1591 - "C:\Users\152\Documents\CSM152A\lab2\rtl\/seq_definitions.v" Line 1: Root scope declaration is not allowed in verilog 95/2K mode
-WARNING:HDLCompiler:1591 - "C:\Users\152\Documents\CSM152A\lab2\rtl\/seq_definitions.v" Line 2: Root scope declaration is not allowed in verilog 95/2K mode
-WARNING:HDLCompiler:1591 - "C:\Users\152\Documents\CSM152A\lab2\rtl\/seq_definitions.v" Line 3: Root scope declaration is not allowed in verilog 95/2K mode
-WARNING:HDLCompiler:1591 - "C:\Users\152\Documents\CSM152A\lab2\rtl\/seq_definitions.v" Line 4: Root scope declaration is not allowed in verilog 95/2K mode
-WARNING:HDLCompiler:1591 - "C:\Users\152\Documents\CSM152A\lab2\rtl\/seq_definitions.v" Line 5: Root scope declaration is not allowed in verilog 95/2K mode
-WARNING:HDLCompiler:1591 - "C:\Users\152\Documents\CSM152A\lab2\rtl\/seq_definitions.v" Line 7: Root scope declaration is not allowed in verilog 95/2K mode
-WARNING:HDLCompiler:1591 - "C:\Users\152\Documents\CSM152A\lab2\rtl\/seq_definitions.v" Line 8: Root scope declaration is not allowed in verilog 95/2K mode
-WARNING:HDLCompiler:1591 - "C:\Users\152\Documents\CSM152A\lab2\rtl\/seq_definitions.v" Line 9: Root scope declaration is not allowed in verilog 95/2K mode
-WARNING:HDLCompiler:1591 - "C:\Users\152\Documents\CSM152A\lab2\rtl\/seq_definitions.v" Line 10: Root scope declaration is not allowed in verilog 95/2K mode
-WARNING:HDLCompiler:1591 - "C:\Users\152\Documents\CSM152A\lab2\rtl\/seq_definitions.v" Line 12: Root scope declaration is not allowed in verilog 95/2K mode
-WARNING:HDLCompiler:1591 - "C:\Users\152\Documents\CSM152A\lab2\rtl\/seq_definitions.v" Line 13: Root scope declaration is not allowed in verilog 95/2K mode
-WARNING:HDLCompiler:1591 - "C:\Users\152\Documents\CSM152A\lab2\rtl\/seq_definitions.v" Line 14: Root scope declaration is not allowed in verilog 95/2K mode
-WARNING:HDLCompiler:1591 - "C:\Users\152\Documents\CSM152A\lab2\rtl\/seq_definitions.v" Line 15: Root scope declaration is not allowed in verilog 95/2K mode
+Analyzing Verilog file "C:\Users\152\Desktop\CSM152A\lab2\rtl\seq_add.v" into library work
+Parsing verilog file "C:\Users\152\Desktop\CSM152A\lab2\rtl\/seq_definitions.v" included at line 1.
+WARNING:HDLCompiler:1591 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\/seq_definitions.v" Line 1: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\/seq_definitions.v" Line 2: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\/seq_definitions.v" Line 3: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\/seq_definitions.v" Line 4: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\/seq_definitions.v" Line 5: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\/seq_definitions.v" Line 7: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\/seq_definitions.v" Line 8: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\/seq_definitions.v" Line 9: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\/seq_definitions.v" Line 10: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\/seq_definitions.v" Line 12: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\/seq_definitions.v" Line 13: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\/seq_definitions.v" Line 14: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\/seq_definitions.v" Line 15: Root scope declaration is not allowed in verilog 95/2K mode
 Parsing module <seq_add>.
 Parsing module <seq_mult>.
-Analyzing Verilog file "C:\Users\152\Documents\CSM152A\lab2\rtl\uart_fifo.v" into library work
+Analyzing Verilog file "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart_fifo.v" into library work
 Parsing module <uart_fifo>.
-Analyzing Verilog file "C:\Users\152\Documents\CSM152A\lab2\rtl\uart.v" into library work
+Analyzing Verilog file "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart.v" into library work
 Parsing module <uart>.
-Analyzing Verilog file "C:\Users\152\Documents\CSM152A\lab2\rtl\seq_rf.v" into library work
+Analyzing Verilog file "C:\Users\152\Desktop\CSM152A\lab2\rtl\seq_rf.v" into library work
 Parsing module <seq_rf>.
-Parsing verilog file "C:\Users\152\Documents\CSM152A\lab2\rtl\/seq_definitions.v" included at line 8.
-Analyzing Verilog file "C:\Users\152\Documents\CSM152A\lab2\rtl\seq_alu.v" into library work
+Parsing verilog file "C:\Users\152\Desktop\CSM152A\lab2\rtl\/seq_definitions.v" included at line 8.
+Analyzing Verilog file "C:\Users\152\Desktop\CSM152A\lab2\rtl\seq_alu.v" into library work
 Parsing module <seq_alu>.
-Parsing verilog file "C:\Users\152\Documents\CSM152A\lab2\rtl\/seq_definitions.v" included at line 7.
-Analyzing Verilog file "C:\Users\152\Documents\CSM152A\lab2\rtl\uart_top.v" into library work
+Parsing verilog file "C:\Users\152\Desktop\CSM152A\lab2\rtl\/seq_definitions.v" included at line 7.
+Analyzing Verilog file "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart_top.v" into library work
 Parsing module <uart_top>.
-Parsing verilog file "C:\Users\152\Documents\CSM152A\lab2\rtl\/seq_definitions.v" included at line 8.
-Analyzing Verilog file "C:\Users\152\Documents\CSM152A\lab2\rtl\seq.v" into library work
+Parsing verilog file "C:\Users\152\Desktop\CSM152A\lab2\rtl\/seq_definitions.v" included at line 8.
+Analyzing Verilog file "C:\Users\152\Desktop\CSM152A\lab2\rtl\seq.v" into library work
 Parsing module <seq>.
-Parsing verilog file "C:\Users\152\Documents\CSM152A\lab2\rtl\/seq_definitions.v" included at line 8.
-Analyzing Verilog file "C:\Users\152\Documents\CSM152A\lab2\rtl\nexys3.v" into library work
+Parsing verilog file "C:\Users\152\Desktop\CSM152A\lab2\rtl\/seq_definitions.v" included at line 8.
+Analyzing Verilog file "C:\Users\152\Desktop\CSM152A\lab2\rtl\nexys3.v" into library work
 Parsing module <nexys3>.
-Parsing verilog file "C:\Users\152\Documents\CSM152A\lab2\rtl\/seq_definitions.v" included at line 8.
+Parsing verilog file "C:\Users\152\Desktop\CSM152A\lab2\rtl\/seq_definitions.v" included at line 8.
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -149,47 +149,49 @@ Parsing verilog file "C:\Users\152\Documents\CSM152A\lab2\rtl\/seq_definitions.v
 Elaborating module <nexys3>.
 
 Elaborating module <$unit_1>.
-WARNING:HDLCompiler:413 - "C:\Users\152\Documents\CSM152A\lab2\rtl\nexys3.v" Line 129: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\nexys3.v" Line 129: Result of 9-bit expression is truncated to fit in 8-bit target.
 
 Elaborating module <seq>.
 
 Elaborating module <seq_rf>.
 
 Elaborating module <seq_alu>.
-WARNING:HDLCompiler:413 - "C:\Users\152\Documents\CSM152A\lab2\rtl\seq_alu.v" Line 32: Result of 20-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\seq_alu.v" Line 32: Result of 20-bit expression is truncated to fit in 16-bit target.
 
 Elaborating module <seq_add>.
 
 Elaborating module <seq_mult>.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\nexys3.v" Line 154: Result of 2-bit expression is truncated to fit in 1-bit target.
 
 Elaborating module <uart_top>.
-WARNING:HDLCompiler:413 - "C:\Users\152\Documents\CSM152A\lab2\rtl\uart_top.v" Line 60: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Documents\CSM152A\lab2\rtl\uart_top.v" Line 61: Result of 20-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart_top.v" Line 72: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart_top.v" Line 73: Result of 20-bit expression is truncated to fit in 16-bit target.
 
 Elaborating module <uart_fifo>.
-WARNING:HDLCompiler:413 - "C:\Users\152\Documents\CSM152A\lab2\rtl\uart_fifo.v" Line 55: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Documents\CSM152A\lab2\rtl\uart_fifo.v" Line 61: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart_fifo.v" Line 55: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart_fifo.v" Line 61: Result of 32-bit expression is truncated to fit in 10-bit target.
 
 Elaborating module <uart>.
-WARNING:HDLCompiler:413 - "C:\Users\152\Documents\CSM152A\lab2\rtl\uart.v" Line 90: Result of 32-bit expression is truncated to fit in 11-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Documents\CSM152A\lab2\rtl\uart.v" Line 93: Result of 32-bit expression is truncated to fit in 6-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Documents\CSM152A\lab2\rtl\uart.v" Line 95: Result of 32-bit expression is truncated to fit in 11-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Documents\CSM152A\lab2\rtl\uart.v" Line 98: Result of 32-bit expression is truncated to fit in 6-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Documents\CSM152A\lab2\rtl\uart.v" Line 138: Result of 32-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Documents\CSM152A\lab2\rtl\uart.v" Line 139: Result of 32-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Documents\CSM152A\lab2\rtl\uart.v" Line 147: Result of 32-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Documents\CSM152A\lab2\rtl\uart.v" Line 153: Result of 32-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Documents\CSM152A\lab2\rtl\uart.v" Line 192: Result of 32-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Documents\CSM152A\lab2\rtl\uart.v" Line 209: Result of 32-bit expression is truncated to fit in 2-bit target.
-WARNING:HDLCompiler:1127 - "C:\Users\152\Documents\CSM152A\lab2\rtl\nexys3.v" Line 160: Assignment to uart_rx_data ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\152\Documents\CSM152A\lab2\rtl\nexys3.v" Line 161: Assignment to uart_rx_valid ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart.v" Line 90: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart.v" Line 93: Result of 32-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart.v" Line 95: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart.v" Line 98: Result of 32-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart.v" Line 138: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart.v" Line 139: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart.v" Line 147: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart.v" Line 153: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart.v" Line 192: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart.v" Line 209: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:1127 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\nexys3.v" Line 159: Assignment to uart_rx_data ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\nexys3.v" Line 160: Assignment to uart_rx_valid ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\nexys3.v" Line 165: Size mismatch in connection of port <i_tx_reg>. Formal port size is 2-bit while actual signal size is 1-bit.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <nexys3>.
-    Related source file is "C:\Users\152\Documents\CSM152A\lab2\rtl\nexys3.v".
+    Related source file is "C:\Users\152\Desktop\CSM152A\lab2\rtl\nexys3.v".
         seq_in_width = 8
         seq_op_width = 2
         seq_rn_width = 2
@@ -203,8 +205,8 @@ Synthesizing Unit <nexys3>.
         seq_rf_width = 16
         alu_width = 16
         uart_num_nib = 4
-INFO:Xst:3210 - "C:\Users\152\Documents\CSM152A\lab2\rtl\nexys3.v" line 157: Output port <o_rx_data> of the instance <uart_top_> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\152\Documents\CSM152A\lab2\rtl\nexys3.v" line 157: Output port <o_rx_valid> of the instance <uart_top_> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\nexys3.v" line 156: Output port <o_rx_data> of the instance <uart_top_> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\nexys3.v" line 156: Output port <o_rx_valid> of the instance <uart_top_> is unconnected or connected to loadless signal.
     Found 2-bit register for signal <arst_ff>.
     Found 17-bit register for signal <clk_dv>.
     Found 1-bit register for signal <clk_en>.
@@ -215,7 +217,7 @@ INFO:Xst:3210 - "C:\Users\152\Documents\CSM152A\lab2\rtl\nexys3.v" line 157: Out
     Found 1-bit register for signal <inst_vld>.
     Found 1-bit register for signal <inst_vld_send>.
     Found 8-bit register for signal <led>.
-    Found 18-bit adder for signal <n0059> created at line 69.
+    Found 18-bit adder for signal <n0061> created at line 69.
     Found 8-bit adder for signal <inst_cnt[7]_GND_1_o_add_17_OUT> created at line 129.
     Summary:
 	inferred   2 Adder/Subtractor(s).
@@ -223,7 +225,7 @@ INFO:Xst:3210 - "C:\Users\152\Documents\CSM152A\lab2\rtl\nexys3.v" line 157: Out
 Unit <nexys3> synthesized.
 
 Synthesizing Unit <seq>.
-    Related source file is "C:\Users\152\Documents\CSM152A\lab2\rtl\seq.v".
+    Related source file is "C:\Users\152\Desktop\CSM152A\lab2\rtl\seq.v".
         seq_in_width = 8
         seq_op_width = 2
         seq_rn_width = 2
@@ -242,7 +244,7 @@ Synthesizing Unit <seq>.
 Unit <seq> synthesized.
 
 Synthesizing Unit <seq_rf>.
-    Related source file is "C:\Users\152\Documents\CSM152A\lab2\rtl\seq_rf.v".
+    Related source file is "C:\Users\152\Desktop\CSM152A\lab2\rtl\seq_rf.v".
         seq_in_width = 8
         seq_op_width = 2
         seq_rn_width = 2
@@ -265,7 +267,7 @@ Synthesizing Unit <seq_rf>.
 Unit <seq_rf> synthesized.
 
 Synthesizing Unit <seq_alu>.
-    Related source file is "C:\Users\152\Documents\CSM152A\lab2\rtl\seq_alu.v".
+    Related source file is "C:\Users\152\Desktop\CSM152A\lab2\rtl\seq_alu.v".
         seq_in_width = 8
         seq_op_width = 2
         seq_rn_width = 2
@@ -286,7 +288,7 @@ Synthesizing Unit <seq_alu>.
 Unit <seq_alu> synthesized.
 
 Synthesizing Unit <seq_add>.
-    Related source file is "C:\Users\152\Documents\CSM152A\lab2\rtl\seq_add.v".
+    Related source file is "C:\Users\152\Desktop\CSM152A\lab2\rtl\seq_add.v".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 16-bit adder for signal <o_data> created at line 21.
@@ -295,7 +297,7 @@ WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and lef
 Unit <seq_add> synthesized.
 
 Synthesizing Unit <seq_mult>.
-    Related source file is "C:\Users\152\Documents\CSM152A\lab2\rtl\seq_add.v".
+    Related source file is "C:\Users\152\Desktop\CSM152A\lab2\rtl\seq_add.v".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 16x16-bit multiplier for signal <n0002> created at line 43.
@@ -304,7 +306,7 @@ WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and lef
 Unit <seq_mult> synthesized.
 
 Synthesizing Unit <uart_top>.
-    Related source file is "C:\Users\152\Documents\CSM152A\lab2\rtl\uart_top.v".
+    Related source file is "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart_top.v".
         seq_in_width = 8
         seq_op_width = 2
         seq_rn_width = 2
@@ -319,26 +321,31 @@ Synthesizing Unit <uart_top>.
         alu_width = 16
         uart_num_nib = 4
         stIdle = 0
-        stNib1 = 1
-        stNL = 5
-        stCR = 6
-INFO:Xst:3210 - "C:\Users\152\Documents\CSM152A\lab2\rtl\uart_top.v" line 100: Output port <fifo_cnt> of the instance <tfifo_> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\152\Documents\CSM152A\lab2\rtl\uart_top.v" line 120: Output port <is_receiving> of the instance <uart_> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\152\Documents\CSM152A\lab2\rtl\uart_top.v" line 120: Output port <recv_error> of the instance <uart_> is unconnected or connected to loadless signal.
+        stR = 1
+        stRegNum = 2
+        stColon = 3
+        stNib1 = 4
+        stNL = 8
+        stCR = 9
+INFO:Xst:3210 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart_top.v" line 117: Output port <fifo_cnt> of the instance <tfifo_> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart_top.v" line 137: Output port <is_receiving> of the instance <uart_> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart_top.v" line 137: Output port <recv_error> of the instance <uart_> is unconnected or connected to loadless signal.
     Found 16-bit register for signal <tx_data>.
+    Found 2-bit register for signal <tx_reg>.
     Found 1-bit register for signal <tfifo_rd_z>.
-    Found 3-bit register for signal <state>.
-    Found 3-bit adder for signal <state[2]_GND_9_o_add_5_OUT> created at line 60.
-    Found 16x8-bit Read Only RAM for signal <tx_data[15]_GND_9_o_wide_mux_17_OUT>
+    Found 4-bit register for signal <state>.
+    Found 4-bit adder for signal <state[3]_GND_9_o_add_6_OUT> created at line 72.
+    Found 4x8-bit Read Only RAM for signal <tx_reg[1]_GND_9_o_wide_mux_24_OUT>
+    Found 16x8-bit Read Only RAM for signal <tx_data[15]_GND_9_o_wide_mux_25_OUT>
     Summary:
-	inferred   1 RAM(s).
+	inferred   2 RAM(s).
 	inferred   1 Adder/Subtractor(s).
-	inferred  20 D-type flip-flop(s).
-	inferred   5 Multiplexer(s).
+	inferred  23 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
 Unit <uart_top> synthesized.
 
 Synthesizing Unit <uart_fifo>.
-    Related source file is "C:\Users\152\Documents\CSM152A\lab2\rtl\uart_fifo.v".
+    Related source file is "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart_fifo.v".
         size = 1024
         sizew = 10
     Set property "ram_style = block" for signal <mem>.
@@ -360,7 +367,7 @@ Synthesizing Unit <uart_fifo>.
 Unit <uart_fifo> synthesized.
 
 Synthesizing Unit <uart>.
-    Related source file is "C:\Users\152\Documents\CSM152A\lab2\rtl\uart.v".
+    Related source file is "C:\Users\152\Desktop\CSM152A\lab2\rtl\uart.v".
         CLOCK_DIVIDE = 25
         RX_IDLE = 0
         RX_CHECK_START = 1
@@ -403,9 +410,10 @@ Unit <uart> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
+# RAMs                                                 : 3
  1024x8-bit dual-port RAM                              : 1
  16x8-bit single-port Read Only RAM                    : 1
+ 4x8-bit single-port Read Only RAM                     : 1
 # Multipliers                                          : 1
  16x16-bit multiplier                                  : 1
 # Adders/Subtractors                                   : 14
@@ -414,23 +422,23 @@ Macro Statistics
  11-bit subtractor                                     : 2
  16-bit adder                                          : 1
  18-bit adder                                          : 1
- 3-bit adder                                           : 1
+ 4-bit adder                                           : 1
  4-bit subtractor                                      : 2
  6-bit subtractor                                      : 2
  8-bit adder                                           : 1
-# Registers                                            : 30
+# Registers                                            : 31
  1-bit register                                        : 7
  10-bit register                                       : 3
  11-bit register                                       : 2
  16-bit register                                       : 1
  18-bit register                                       : 1
- 2-bit register                                        : 2
- 3-bit register                                        : 4
- 4-bit register                                        : 2
+ 2-bit register                                        : 3
+ 3-bit register                                        : 3
+ 4-bit register                                        : 3
  6-bit register                                        : 2
  64-bit register                                       : 1
  8-bit register                                        : 5
-# Multiplexers                                         : 45
+# Multiplexers                                         : 47
  1-bit 2-to-1 multiplexer                              : 2
  1-bit 4-to-1 multiplexer                              : 1
  11-bit 2-to-1 multiplexer                             : 6
@@ -438,13 +446,13 @@ Macro Statistics
  16-bit 4-to-1 multiplexer                             : 3
  2-bit 2-to-1 multiplexer                              : 4
  2-bit 4-to-1 multiplexer                              : 1
- 3-bit 2-to-1 multiplexer                              : 8
+ 3-bit 2-to-1 multiplexer                              : 5
  3-bit 8-to-1 multiplexer                              : 1
- 4-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 6
  6-bit 2-to-1 multiplexer                              : 8
  6-bit 3-to-1 multiplexer                              : 1
  6-bit 7-to-1 multiplexer                              : 1
- 8-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 2
 
 =========================================================================
 
@@ -452,6 +460,7 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1710 - FF/Latch <tx_reg_1> (without init value) has a constant value of 0 in block <uart_top_>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <nexys3>.
 The following registers are absorbed into counter <inst_cnt>: 1 register on signal <inst_cnt>.
@@ -490,7 +499,7 @@ INFO:Xst:3226 - The RAM <Mram_mem> will be implemented as a BLOCK RAM, absorbing
 Unit <uart_fifo> synthesized (advanced).
 
 Synthesizing (advanced) Unit <uart_top>.
-INFO:Xst:3231 - The small RAM <Mram_tx_data[15]_GND_9_o_wide_mux_17_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+INFO:Xst:3231 - The small RAM <Mram_tx_data[15]_GND_9_o_wide_mux_25_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -501,15 +510,27 @@ INFO:Xst:3231 - The small RAM <Mram_tx_data[15]_GND_9_o_wide_mux_17_OUT> will be
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_tx_reg[1]_GND_9_o_wide_mux_24_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 8-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <tx_reg>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
 Unit <uart_top> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
+# RAMs                                                 : 3
  1024x8-bit dual-port block RAM                        : 1
  16x8-bit single-port distributed Read Only RAM        : 1
+ 4x8-bit single-port distributed Read Only RAM         : 1
 # Multipliers                                          : 1
  16x16-bit multiplier                                  : 1
 # Adders/Subtractors                                   : 10
@@ -518,7 +539,7 @@ Macro Statistics
  11-bit subtractor                                     : 2
  16-bit adder                                          : 1
  18-bit adder                                          : 1
- 3-bit adder                                           : 1
+ 4-bit adder                                           : 1
  4-bit subtractor                                      : 1
  6-bit subtractor                                      : 2
 # Counters                                             : 2
@@ -526,9 +547,9 @@ Macro Statistics
  8-bit up counter                                      : 1
 # Accumulators                                         : 2
  10-bit up accumulator                                 : 2
-# Registers                                            : 193
- Flip-Flops                                            : 193
-# Multiplexers                                         : 54
+# Registers                                            : 196
+ Flip-Flops                                            : 196
+# Multiplexers                                         : 56
  1-bit 2-to-1 multiplexer                              : 14
  1-bit 4-to-1 multiplexer                              : 1
  11-bit 2-to-1 multiplexer                             : 6
@@ -536,19 +557,20 @@ Macro Statistics
  16-bit 4-to-1 multiplexer                             : 3
  2-bit 2-to-1 multiplexer                              : 4
  2-bit 4-to-1 multiplexer                              : 1
- 3-bit 2-to-1 multiplexer                              : 8
+ 3-bit 2-to-1 multiplexer                              : 5
  3-bit 8-to-1 multiplexer                              : 1
- 4-bit 2-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 5
  6-bit 2-to-1 multiplexer                              : 6
  6-bit 3-to-1 multiplexer                              : 1
  6-bit 7-to-1 multiplexer                              : 1
- 8-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 2
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1710 - FF/Latch <tx_reg_1> (without init value) has a constant value of 0 in block <uart_top>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <nexys3> ...
 
@@ -610,8 +632,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 187
- Flip-Flops                                            : 187
+# Registers                                            : 189
+ Flip-Flops                                            : 189
 
 =========================================================================
 
@@ -634,24 +656,24 @@ Top Level Output File Name         : nexys3.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 386
+# BELS                             : 380
 #      GND                         : 1
-#      INV                         : 3
+#      INV                         : 2
 #      LUT1                        : 23
-#      LUT2                        : 24
-#      LUT3                        : 19
-#      LUT4                        : 28
-#      LUT5                        : 56
-#      LUT6                        : 151
+#      LUT2                        : 26
+#      LUT3                        : 15
+#      LUT4                        : 38
+#      LUT5                        : 53
+#      LUT6                        : 141
 #      MUXCY                       : 39
 #      VCC                         : 1
 #      XORCY                       : 41
-# FlipFlops/Latches                : 187
-#      FD                          : 14
+# FlipFlops/Latches                : 189
+#      FD                          : 15
 #      FDE                         : 28
 #      FDP                         : 2
-#      FDR                         : 56
-#      FDRE                        : 86
+#      FDR                         : 53
+#      FDRE                        : 90
 #      FDS                         : 1
 # RAMS                             : 1
 #      RAMB8BWER                   : 1
@@ -670,16 +692,16 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             187  out of  18224     1%  
- Number of Slice LUTs:                  304  out of   9112     3%  
-    Number used as Logic:               304  out of   9112     3%  
+ Number of Slice Registers:             189  out of  18224     1%  
+ Number of Slice LUTs:                  298  out of   9112     3%  
+    Number used as Logic:               298  out of   9112     3%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    316
-   Number with an unused Flip Flop:     129  out of    316    40%  
-   Number with an unused LUT:            12  out of    316     3%  
-   Number of fully used LUT-FF pairs:   175  out of    316    55%  
-   Number of unique control sets:         9
+ Number of LUT Flip Flop pairs used:    310
+   Number with an unused Flip Flop:     121  out of    310    39%  
+   Number with an unused LUT:            12  out of    310     3%  
+   Number of fully used LUT-FF pairs:   177  out of    310    57%  
+   Number of unique control sets:        10
 
 IO Utilization: 
  Number of IOs:                          22
@@ -712,7 +734,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 188   |
+clk                                | BUFGP                  | 190   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -735,7 +757,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 6.909ns (frequency: 144.739MHz)
-  Total number of paths / destination ports: 35481 / 462
+  Total number of paths / destination ports: 35501 / 469
 -------------------------------------------------------------------------
 Delay:               6.909ns (Levels of Logic = 3)
   Source:            inst_wd_5 (FF)
@@ -758,7 +780,7 @@ Delay:               6.909ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 12 / 12
+  Total number of paths / destination ports: 13 / 13
 -------------------------------------------------------------------------
 Offset:              2.268ns (Levels of Logic = 1)
   Source:            btnR (PAD)
@@ -811,13 +833,13 @@ clk            |    6.909|         |         |         |
 
 
 Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 10.59 secs
+Total CPU time to Xst completion: 11.26 secs
  
 --> 
 
-Total memory usage is 261884 kilobytes
+Total memory usage is 262140 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   73 (   0 filtered)
-Number of infos    :    7 (   0 filtered)
+Number of warnings :   77 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
 

@@ -150,9 +150,8 @@ module nexys3 (/*AUTOARG*/
    // ===========================================================================
    // UART controller
    // ===========================================================================
-
-   //assign sent_register = sw[5:4];
-   //wire send_tx_data = inst_vld_send ? {2'b11, sw[5:4], 4'b0000} : seq_tx_data[seq_dp_width-1:0];
+   
+   assign sentRegister = sw[5:4];
    
    uart_top uart_top_ (// Outputs
                        .o_tx            (RsTx),
@@ -163,6 +162,7 @@ module nexys3 (/*AUTOARG*/
                        .i_rx            (RsRx),
                        .i_tx_data       (seq_tx_data[seq_dp_width-1:0]),
                        .i_tx_stb        (seq_tx_valid),
+					   .i_tx_reg		(sentRegister),
                        /*AUTOINST*/
                        // Inputs
                        .clk             (clk),

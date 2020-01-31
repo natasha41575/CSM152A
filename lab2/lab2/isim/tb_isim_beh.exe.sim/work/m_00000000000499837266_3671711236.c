@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/152/Documents/CSM152A/lab2/tb/tb.v";
+static const char *ng0 = "C:/Users/152/Desktop/CSM152A/lab2/tb/tb.v";
 static const char *ng1 = "%d ... Running instruction %08b";
 static int ng2[] = {1, 0};
 static int ng3[] = {0, 0};
@@ -1287,7 +1287,7 @@ LAB2:    xsi_set_current_line(118, ng0);
 
 LAB1:    return;
 LAB4:    xsi_set_current_line(119, ng0);
-    t4 = (t0 + 11012);
+    t4 = (t0 + 11008);
     t5 = *((char **)t4);
     t6 = ((((char*)(t5))) + 56U);
     t7 = *((char **)t6);
@@ -1307,7 +1307,7 @@ LAB5:    xsi_set_current_line(120, ng0);
     *((int *)t14) = xsi_vlog_stime(1000.0000000000000, 1000.0000000000000);
     t15 = (t14 + 4);
     *((int *)t15) = 0;
-    t16 = (t0 + 11036);
+    t16 = (t0 + 11032);
     t17 = *((char **)t16);
     t18 = ((((char*)(t17))) + 56U);
     t19 = *((char **)t18);
