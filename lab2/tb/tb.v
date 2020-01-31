@@ -7,7 +7,10 @@ module tb;
    reg       btnS;
    reg       btnR;
    
-   integer   i;
+   integer   file, x;
+   reg [9:0]	numLines;
+   reg [9:0]	counter;
+   reg [7:0]	instruction;
    
    /*AUTOWIRE*/
    // Beginning of automatic wires (for undeclared instantiated-module outputs)
@@ -24,10 +27,25 @@ module tb;
         clk = 0;
         btnR = 1;
         btnS = 0;
+		counter = 0;
         #1000 btnR = 0;
         #1500000;
-        
-        tskRunPUSH(0,4);
+		
+		file = $fopen("C:/Users/152/Desktop/CSM152A/lab2/seq.code", "rb");
+		x = $fscanf(file, "%b\n", numLines);
+		while(!$feof(file) && counter < numLines-1) 
+			begin
+				x = $fscanf(file, "%b\n", instruction[7:0]);
+				case(instruction[7:6])
+					2'b00: tskRunPUSH(instruction[5:4], instruction[3:0]);
+					2'b01: tskRunADD(instruction[5:4], instruction[3:2], instruction[1:0]);
+					2'b10: tskRunMULT(instruction[5:4], instruction[3:2], instruction[1:0]);
+					2'b11: tskRunSEND(instruction[5:4]);
+				endcase
+				counter = counter + 1;
+			end
+
+        /*tskRunPUSH(0,4);
         tskRunPUSH(0,0);
         tskRunPUSH(1,3);
         tskRunMULT(0,1,2);
@@ -35,7 +53,7 @@ module tb;
         tskRunSEND(0);
         tskRunSEND(1);
         tskRunSEND(2);
-        tskRunSEND(3);
+        tskRunSEND(3);*/
         
         #1000;        
         $finish;
