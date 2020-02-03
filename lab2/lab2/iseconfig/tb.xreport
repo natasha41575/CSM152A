@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-01-30T17:29:56</DateModified>
+  <DateModified>2020-02-03T12:22:13</DateModified>
   <ModuleName>nexys3</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2020-02-03T12:21:54</SummaryTimeStamp>
   <SavedFilePath>C:/Users/152/Desktop/CSM152A/lab2/lab2/iseconfig/tb.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/152/Desktop/CSM152A/lab2/lab2</ImplementationReportsDirectory>
-  <DateInitialized>2020-01-30T17:29:56</DateInitialized>
+  <ImplementationReportsDirectory>C:/Users/152/Desktop/CSM152A/lab2/lab2\</ImplementationReportsDirectory>
+  <DateInitialized>2020-02-03T12:22:12</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

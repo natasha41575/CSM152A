@@ -1,0 +1,51 @@
+Running: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/152/Desktop/CSM152A/lab2/lab2/tb_isim_beh.exe -prj C:/Users/152/Desktop/CSM152A/lab2/lab2/tb_beh.prj work.tb work.glbl 
+ISim P.68d (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/seq_add.v" into library work
+WARNING:HDLCompiler:1591 - "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/seq_definitions.v" Line 1: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/seq_definitions.v" Line 2: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/seq_definitions.v" Line 3: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/seq_definitions.v" Line 4: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/seq_definitions.v" Line 5: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/seq_definitions.v" Line 7: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/seq_definitions.v" Line 8: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/seq_definitions.v" Line 9: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/seq_definitions.v" Line 10: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/seq_definitions.v" Line 12: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/seq_definitions.v" Line 13: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/seq_definitions.v" Line 14: Root scope declaration is not allowed in verilog 95/2K mode
+WARNING:HDLCompiler:1591 - "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/seq_definitions.v" Line 15: Root scope declaration is not allowed in verilog 95/2K mode
+Analyzing Verilog file "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/uart_fifo.v" into library work
+Analyzing Verilog file "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/uart.v" into library work
+Analyzing Verilog file "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/seq_rf.v" into library work
+Analyzing Verilog file "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/seq_alu.v" into library work
+Analyzing Verilog file "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/uart_top.v" into library work
+Analyzing Verilog file "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/seq.v" into library work
+Analyzing Verilog file "C:/Users/152/Desktop/CSM152A/lab2/lab2/../tb/model_uart.v" into library work
+Analyzing Verilog file "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/nexys3.v" into library work
+Analyzing Verilog file "C:/Users/152/Desktop/CSM152A/lab2/lab2/../tb/tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/152/Desktop/CSM152A/lab2/lab2/../tb/tb.v" Line 76: Port btnSend is not connected to this instance
+WARNING:HDLCompiler:189 - "C:/Users/152/Desktop/CSM152A/lab2/lab2/../rtl/nexys3.v" Line 165: Size mismatch in connection of port <i_tx_reg>. Formal port size is 2-bit while actual signal size is 1-bit.
+Completed static elaboration
+Compiling module model_uart(baud=1000000,name="UA...
+Compiling module seq_rf_default
+Compiling module seq_add
+Compiling module seq_mult
+Compiling module seq_alu_default
+Compiling module seq_default
+Compiling module uart_fifo
+Compiling module uart
+Compiling module uart_top_default
+Compiling module nexys3_default
+Compiling module tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 4 sub-compilation(s) to finish...
+Compiled 12 Verilog Units
+Built simulation executable C:/Users/152/Desktop/CSM152A/lab2/lab2/tb_isim_beh.exe
+Fuse Memory Usage: 28188 KB
+Fuse CPU Usage: 608 ms

@@ -31,6 +31,7 @@ module tb;
         #1000 btnR = 0;
         #1500000;
 		
+		
 		file = $fopen("C:/Users/152/Desktop/CSM152A/lab2/seq.code", "rb");
 		x = $fscanf(file, "%b\n", numLines);
 		while(!$feof(file) && counter < numLines-1) 
@@ -44,17 +45,18 @@ module tb;
 				endcase
 				counter = counter + 1;
 			end
-
-        /*tskRunPUSH(0,4);
-        tskRunPUSH(0,0);
-        tskRunPUSH(1,3);
-        tskRunMULT(0,1,2);
-        tskRunADD(2,0,3);
-        tskRunSEND(0);
-        tskRunSEND(1);
-        tskRunSEND(2);
-        tskRunSEND(3);*/
+		
+//        tskRunPUSH(0,4);
+//        tskRunPUSH(0,0);
+//        tskRunPUSH(1,3);
+//        tskRunMULT(0,1,2);
+//        tskRunADD(2,0,3);
+//        tskRunSEND(0);
+//        tskRunSEND(1);
+//        tskRunSEND(2);
+//        tskRunSEND(3);
         
+		
         #1000;        
         $finish;
      end
