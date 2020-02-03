@@ -1,3 +1,10 @@
+/***
+	Lab 3: Sequencer
+	Team Members: 	Austin Zhang	604 736 503
+					Bryan Wong		805 111 517
+					Natasha Sarkar	904 743 795
+***/
+
 module nexys3 (/*AUTOARG*/
    // Outputs
    RsTx, led,
