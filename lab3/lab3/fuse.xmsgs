@@ -5,31 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"C:/Users/152/Desktop/CSM152A/lab3/lab3/counter_tb.v" Line 55: Procedural assignment to a non-register <arg fmt="%s" index="1">seconds_0</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+<msg type="error" file="Simulator" num="904" delta="unknown" >Unable to remove previous simulation file <arg fmt="%s" index="1">isim/counter_tb_isim_beh.exe.sim/counter_tb_isim_beh.exe</arg>. Please check if you have another instance of this simulation running on your system, terminate it and then recompile your design. System Error Message: <arg fmt="%s" index="2">boost::filesystem::remove: Access is denied: &quot;isim\counter_tb_isim_beh.exe.sim\counter_tb_isim_beh.exe&quot;</arg>
 </msg>
 
-<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"C:/Users/152/Desktop/CSM152A/lab3/lab3/counter_tb.v" Line 55: Procedural assignment to a non-register <arg fmt="%s" index="1">seconds_0</arg> is not permitted, left-hand side should be reg/integer/time/genvar
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"C:/Users/152/Desktop/CSM152A/lab3/lab3/counter_tb.v" Line 56: Procedural assignment to a non-register <arg fmt="%s" index="1">seconds_1</arg> is not permitted, left-hand side should be reg/integer/time/genvar
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"C:/Users/152/Desktop/CSM152A/lab3/lab3/counter_tb.v" Line 56: Procedural assignment to a non-register <arg fmt="%s" index="1">seconds_1</arg> is not permitted, left-hand side should be reg/integer/time/genvar
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"C:/Users/152/Desktop/CSM152A/lab3/lab3/counter_tb.v" Line 57: Procedural assignment to a non-register <arg fmt="%s" index="1">minutes_0</arg> is not permitted, left-hand side should be reg/integer/time/genvar
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"C:/Users/152/Desktop/CSM152A/lab3/lab3/counter_tb.v" Line 57: Procedural assignment to a non-register <arg fmt="%s" index="1">minutes_0</arg> is not permitted, left-hand side should be reg/integer/time/genvar
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"C:/Users/152/Desktop/CSM152A/lab3/lab3/counter_tb.v" Line 58: Procedural assignment to a non-register <arg fmt="%s" index="1">minutes_1</arg> is not permitted, left-hand side should be reg/integer/time/genvar
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"C:/Users/152/Desktop/CSM152A/lab3/lab3/counter_tb.v" Line 58: Procedural assignment to a non-register <arg fmt="%s" index="1">minutes_1</arg> is not permitted, left-hand side should be reg/integer/time/genvar
-</msg>
-
-<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"C:/Users/152/Desktop/CSM152A/lab3/lab3/counter_tb.v" Line 25: Module &lt;<arg fmt="%s" index="1">counter_tb</arg>&gt; ignored due to previous errors.
+<msg type="error" file="Simulator" num="861" delta="unknown" >Failed to link the design
 </msg>
 
 </messages>
