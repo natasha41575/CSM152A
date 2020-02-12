@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Users\152\CSM152A\lab3\lab3\counter_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/152/CSM152A/lab3/lab3/counter_tb_isim_beh.wdb 
+Running: C:\Users\152\Desktop\CSM152A\lab3\lab3\stopwatch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/152/Desktop/CSM152A/lab3/lab3/stopwatch_tb_isim_beh.wdb 
 ISim P.68d (signature 0x7708f090)
 ----------------------------------------------------------------------
 WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
@@ -13,4 +13,4 @@ Time resolution is 1 ps
 # run all
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 21983995 ns : File "C:/Users/152/CSM152A/lab3/lab3/counter_tb.v" Line 82
+Stopped at time : 44827830 ns : File "C:/Users/152/Desktop/CSM152A/lab3/lab3/stopwatch_tb.v" Line 62

@@ -9,7 +9,7 @@
  */
 module nexys3( 
 	// Outputs
-	
+	an, seg,
 	// Inputs
 	swSel, swAdj, btnRst, btnPause, clk
     );
@@ -21,12 +21,15 @@ module nexys3(
 	
 	input clk;	// 100 MHz
 	
+	output [3:0] an;	// Digit to light up
+	output [7:0] seg;	// Segments to light up
+	
 	wire rst;
 	wire        arst_i;
 	reg [1:0]   arst_ff;
 	
-	wire sel;
-	wire adj;
+	reg sel;
+	reg adj;
 	
 	wire _1hz;
 	wire _2hz;
@@ -40,6 +43,11 @@ module nexys3(
 	
 	reg         pause;
 	reg [2:0]   step_d_pause;
+	
+	wire [3:0] minutes_0;
+	wire [3:0] minutes_1;
+	wire [3:0] seconds_0;
+	wire [3:0] seconds_1;
 
 	// ===========================================================================
 	// Asynchronous Reset
@@ -110,4 +118,34 @@ module nexys3(
 				 ._4hz(_4hz),
 				 // Inputs
 				 .base_clk(clk) );
+				 
+	counter counter_(// Outputs
+					 .minutes_0(minutes_0), 
+					 .minutes_1(minutes_1), 
+					 .seconds_0(seconds_0), 
+					 .seconds_1(seconds_1),
+					 // Inputs
+					 .rst(rst), 
+					 .pause(pause), 
+					 .clk(clk), 
+					 ._1hz(_1hz), 
+					 ._2hz(_2hz), 
+					 .sel(sel), 
+					 .adj(adj));
+					 
+	display display_(//Outputs
+				     .an(an), 
+					 .seg(seg),
+					 //Inputs
+					 .minutes_0(minutes_0), 
+					 .minutes_1(minutes_1), 
+					 .seconds_0(seconds_0), 
+					 .seconds_1(seconds_1), 
+					 .adj(adj), 
+					 .sel(sel), 
+					 ._666hz(_666hz),
+					 ._4hz(_4hz) );
+					 
+	
+			
 endmodule

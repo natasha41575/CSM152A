@@ -1,0 +1,600 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: nexys3.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "nexys3.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "nexys3"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : nexys3
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\152\Desktop\CSM152A\lab3\lab3\display.v" into library work
+Parsing module <display>.
+Analyzing Verilog file "C:\Users\152\Desktop\CSM152A\lab3\lab3\counter.v" into library work
+Parsing module <counter>.
+Analyzing Verilog file "C:\Users\152\Desktop\CSM152A\lab3\lab3\clock.v" into library work
+Parsing module <clock>.
+Analyzing Verilog file "C:\Users\152\Desktop\CSM152A\lab3\lab3\nexys3.v" into library work
+Parsing module <nexys3>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <nexys3>.
+
+Elaborating module <clock>.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab3\lab3\clock.v" Line 43: Result of 27-bit expression is truncated to fit in 26-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab3\lab3\clock.v" Line 44: Result of 27-bit expression is truncated to fit in 26-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab3\lab3\clock.v" Line 45: Result of 19-bit expression is truncated to fit in 18-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab3\lab3\clock.v" Line 46: Result of 25-bit expression is truncated to fit in 24-bit target.
+
+Elaborating module <counter>.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab3\lab3\counter.v" Line 63: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab3\lab3\counter.v" Line 66: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab3\lab3\counter.v" Line 71: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab3\lab3\counter.v" Line 76: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab3\lab3\counter.v" Line 84: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab3\lab3\counter.v" Line 87: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab3\lab3\counter.v" Line 95: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\lab3\lab3\counter.v" Line 98: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <display>.
+WARNING:HDLCompiler:634 - "C:\Users\152\Desktop\CSM152A\lab3\lab3\display.v" Line 26: Net <set_display_segs[7]_0030> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <nexys3>.
+    Related source file is "C:\Users\152\Desktop\CSM152A\lab3\lab3\nexys3.v".
+    Found 2-bit register for signal <arst_ff>.
+    Found 17-bit register for signal <clk_dv>.
+    Found 1-bit register for signal <clk_en>.
+    Found 1-bit register for signal <clk_en_d>.
+    Found 3-bit register for signal <step_d_pause>.
+    Found 1-bit register for signal <sel>.
+    Found 1-bit register for signal <adj>.
+    Found 1-bit register for signal <pause>.
+    Found 18-bit adder for signal <n0041> created at line 69.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  27 D-type flip-flop(s).
+Unit <nexys3> synthesized.
+
+Synthesizing Unit <clock>.
+    Related source file is "C:\Users\152\Desktop\CSM152A\lab3\lab3\clock.v".
+    Found 26-bit register for signal <_2hz_counter>.
+    Found 18-bit register for signal <_666hz_counter>.
+    Found 24-bit register for signal <_4hz_counter>.
+    Found 1-bit register for signal <_1hz>.
+    Found 1-bit register for signal <_2hz>.
+    Found 1-bit register for signal <_666hz>.
+    Found 1-bit register for signal <_4hz>.
+    Found 26-bit register for signal <_1hz_counter>.
+    Found 26-bit adder for signal <1hz_counter[25]_GND_2_o_add_1_OUT> created at line 43.
+    Found 26-bit adder for signal <2hz_counter[25]_GND_2_o_add_2_OUT> created at line 44.
+    Found 18-bit adder for signal <666hz_counter[17]_GND_2_o_add_3_OUT> created at line 45.
+    Found 24-bit adder for signal <4hz_counter[23]_GND_2_o_add_4_OUT> created at line 46.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  98 D-type flip-flop(s).
+Unit <clock> synthesized.
+
+Synthesizing Unit <counter>.
+    Related source file is "C:\Users\152\Desktop\CSM152A\lab3\lab3\counter.v".
+    Found 4-bit register for signal <seconds_0>.
+    Found 4-bit register for signal <seconds_1>.
+    Found 4-bit register for signal <minutes_0>.
+    Found 4-bit register for signal <minutes_1>.
+    Found 2-bit register for signal <_1hz_buffer>.
+    Found 2-bit register for signal <_2hz_buffer>.
+    Found 1-bit register for signal <pauseStatus>.
+    Found 4-bit adder for signal <seconds_0[3]_GND_3_o_add_12_OUT> created at line 63.
+    Found 4-bit adder for signal <seconds_1[3]_GND_3_o_add_15_OUT> created at line 66.
+    Found 4-bit adder for signal <minutes_0[3]_GND_3_o_add_19_OUT> created at line 71.
+    Found 4-bit adder for signal <minutes_1[3]_GND_3_o_add_23_OUT> created at line 76.
+    Found 4-bit adder for signal <minutes_0[3]_GND_3_o_add_31_OUT> created at line 84.
+    Found 4-bit adder for signal <minutes_1[3]_GND_3_o_add_33_OUT> created at line 87.
+    Found 4-bit adder for signal <seconds_0[3]_GND_3_o_add_39_OUT> created at line 95.
+    Found 4-bit adder for signal <seconds_1[3]_GND_3_o_add_41_OUT> created at line 98.
+    Found 4-bit comparator lessequal for signal <n0045> created at line 85
+    Found 4-bit comparator lessequal for signal <n0053> created at line 96
+    Summary:
+	inferred   8 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  32 Multiplexer(s).
+Unit <counter> synthesized.
+
+Synthesizing Unit <mod_4u_4u>.
+    Related source file is "".
+    Found 8-bit adder for signal <n0104> created at line 0.
+    Found 8-bit adder for signal <GND_4_o_b[3]_add_1_OUT> created at line 0.
+    Found 7-bit adder for signal <n0108> created at line 0.
+    Found 7-bit adder for signal <GND_4_o_b[3]_add_3_OUT> created at line 0.
+    Found 6-bit adder for signal <n0112> created at line 0.
+    Found 6-bit adder for signal <GND_4_o_b[3]_add_5_OUT> created at line 0.
+    Found 5-bit adder for signal <n0116> created at line 0.
+    Found 5-bit adder for signal <GND_4_o_b[3]_add_7_OUT> created at line 0.
+    Found 4-bit adder for signal <n0120> created at line 0.
+    Found 4-bit adder for signal <a[3]_b[3]_add_9_OUT[3:0]> created at line 0.
+    Found 8-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 6-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 5-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 4-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Summary:
+	inferred  10 Adder/Subtractor(s).
+	inferred   5 Comparator(s).
+	inferred  14 Multiplexer(s).
+Unit <mod_4u_4u> synthesized.
+
+Synthesizing Unit <display>.
+    Related source file is "C:\Users\152\Desktop\CSM152A\lab3\lab3\display.v".
+WARNING:Xst:653 - Signal <_v29> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <_v57> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <_v85> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <set_display_segs> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 8-bit register for signal <seg>.
+    Found 2-bit register for signal <digit_counter>.
+    Found 4-bit register for signal <an>.
+    Found 2-bit adder for signal <digit_counter[1]_GND_5_o_add_19_OUT> created at line 81.
+    Found 4-bit 4-to-1 multiplexer for signal <digit_counter[1]_PWR_5_o_wide_mux_17_OUT> created at line 47.
+    Found 8-bit 4-to-1 multiplexer for signal <digit_counter[1]_seconds_0[3]_wide_mux_18_OUT> created at line 47.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  14 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <display> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 34
+ 18-bit adder                                          : 2
+ 2-bit adder                                           : 1
+ 24-bit adder                                          : 1
+ 26-bit adder                                          : 2
+ 4-bit adder                                           : 12
+ 5-bit adder                                           : 4
+ 6-bit adder                                           : 4
+ 7-bit adder                                           : 4
+ 8-bit adder                                           : 4
+# Registers                                            : 25
+ 1-bit register                                        : 9
+ 18-bit register                                       : 2
+ 2-bit register                                        : 4
+ 24-bit register                                       : 1
+ 26-bit register                                       : 2
+ 3-bit register                                        : 1
+ 4-bit register                                        : 5
+ 8-bit register                                        : 1
+# Comparators                                          : 12
+ 4-bit comparator lessequal                            : 4
+ 5-bit comparator lessequal                            : 2
+ 6-bit comparator lessequal                            : 2
+ 7-bit comparator lessequal                            : 2
+ 8-bit comparator lessequal                            : 2
+# Multiplexers                                         : 62
+ 1-bit 2-to-1 multiplexer                              : 27
+ 2-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 31
+ 4-bit 4-to-1 multiplexer                              : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <clock>.
+The following registers are absorbed into counter <_2hz_counter>: 1 register on signal <_2hz_counter>.
+The following registers are absorbed into counter <_4hz_counter>: 1 register on signal <_4hz_counter>.
+The following registers are absorbed into counter <_666hz_counter>: 1 register on signal <_666hz_counter>.
+The following registers are absorbed into counter <_1hz_counter>: 1 register on signal <_1hz_counter>.
+Unit <clock> synthesized (advanced).
+
+Synthesizing (advanced) Unit <display>.
+The following registers are absorbed into counter <digit_counter>: 1 register on signal <digit_counter>.
+Unit <display> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 19
+ 18-bit adder                                          : 1
+ 4-bit adder                                           : 8
+ 4-bit adder carry in                                  : 10
+# Counters                                             : 5
+ 18-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 24-bit up counter                                     : 1
+ 26-bit up counter                                     : 2
+# Registers                                            : 64
+ Flip-Flops                                            : 64
+# Comparators                                          : 12
+ 4-bit comparator lessequal                            : 4
+ 5-bit comparator lessequal                            : 2
+ 6-bit comparator lessequal                            : 2
+ 7-bit comparator lessequal                            : 2
+ 8-bit comparator lessequal                            : 2
+# Multiplexers                                         : 62
+ 1-bit 2-to-1 multiplexer                              : 27
+ 2-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 31
+ 4-bit 4-to-1 multiplexer                              : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <_1hz_buffer_1> of sequential type is unconnected in block <counter>.
+WARNING:Xst:2677 - Node <_2hz_buffer_1> of sequential type is unconnected in block <counter>.
+
+Optimizing unit <nexys3> ...
+
+Optimizing unit <clock> ...
+
+Optimizing unit <counter> ...
+
+Optimizing unit <display> ...
+WARNING:Xst:1293 - FF/Latch <clock_/_2hz_counter_25> has a constant value of 0 in block <nexys3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_/seconds_1_3> has a constant value of 0 in block <nexys3>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block nexys3, actual ratio is 2.
+FlipFlop arst_ff_0 has been replicated 2 time(s)
+FlipFlop counter_/seconds_1_0 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 159
+ Flip-Flops                                            : 159
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : nexys3.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 488
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 105
+#      LUT2                        : 7
+#      LUT3                        : 6
+#      LUT4                        : 23
+#      LUT5                        : 34
+#      LUT6                        : 80
+#      MUXCY                       : 106
+#      MUXF7                       : 9
+#      VCC                         : 1
+#      XORCY                       : 110
+# FlipFlops/Latches                : 159
+#      FD                          : 38
+#      FDP                         : 4
+#      FDR                         : 112
+#      FDRE                        : 5
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 16
+#      IBUF                        : 4
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             159  out of  18224     0%  
+ Number of Slice LUTs:                  261  out of   9112     2%  
+    Number used as Logic:               261  out of   9112     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    272
+   Number with an unused Flip Flop:     113  out of    272    41%  
+   Number with an unused LUT:            11  out of    272     4%  
+   Number of fully used LUT-FF pairs:   148  out of    272    54%  
+   Number of unique control sets:         9
+
+IO Utilization: 
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of    232     7%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)         | Load  |
+-----------------------------------+-------------------------------+-------+
+clk                                | BUFGP                         | 145   |
+clock_/_666hz                      | NONE(display_/digit_counter_1)| 14    |
+-----------------------------------+-------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 7.120ns (Maximum Frequency: 140.444MHz)
+   Minimum input arrival time before clock: 2.335ns
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.120ns (frequency: 140.444MHz)
+  Total number of paths / destination ports: 10066 / 263
+-------------------------------------------------------------------------
+Delay:               7.120ns (Levels of Logic = 6)
+  Source:            counter_/seconds_0_0 (FF)
+  Destination:       counter_/minutes_1_2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: counter_/seconds_0_0 to counter_/minutes_1_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              15   0.447   1.229  counter_/seconds_0_0 (counter_/seconds_0_0)
+     LUT4:I0->O            1   0.203   0.924  counter_/Mmux_pauseStatus_PWR_3_o_MUX_108_o14_SW1 (N21)
+     LUT6:I1->O           18   0.203   1.050  counter_/_n0212<0>1 (counter_/_n0212)
+     LUT5:I4->O            3   0.205   0.879  counter_/_n0217<0>1 (counter_/_n0217)
+     LUT5:I2->O            4   0.205   0.684  counter_/PWR_3_o_minutes_0[3]_LessThan_33_o1 (counter_/PWR_3_o_minutes_0[3]_LessThan_33_o)
+     LUT6:I5->O            1   0.205   0.580  counter_/Mmux_minutes_1[3]_minutes_1[3]_mux_52_OUT31 (counter_/minutes_1[3]_minutes_1[3]_mux_52_OUT<2>)
+     LUT6:I5->O            1   0.205   0.000  counter_/minutes_1_2_rstpot (counter_/minutes_1_2_rstpot)
+     FD:D                      0.102          counter_/minutes_1_2
+    ----------------------------------------
+    Total                      7.120ns (1.775ns logic, 5.345ns route)
+                                       (24.9% logic, 75.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_/_666hz'
+  Clock period: 3.285ns (frequency: 304.423MHz)
+  Total number of paths / destination ports: 41 / 14
+-------------------------------------------------------------------------
+Delay:               3.285ns (Levels of Logic = 3)
+  Source:            display_/digit_counter_0 (FF)
+  Destination:       display_/seg_3 (FF)
+  Source Clock:      clock_/_666hz rising
+  Destination Clock: clock_/_666hz rising
+
+  Data Path: display_/digit_counter_0 to display_/seg_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              21   0.447   1.478  display_/digit_counter_0 (display_/digit_counter_0)
+     LUT6:I0->O            1   0.203   0.000  display_/Mmux_digit_counter[1]_seconds_0[3]_wide_mux_18_OUT15_F (N116)
+     MUXF7:I0->O           2   0.131   0.721  display_/Mmux_digit_counter[1]_seconds_0[3]_wide_mux_18_OUT15 (display_/digit_counter[1]_seconds_0[3]_wide_mux_18_OUT<0>)
+     LUT6:I4->O            1   0.203   0.000  display_/Mmux_digit_counter[1]_seconds_0[3]_wide_mux_18_OUT45 (display_/digit_counter[1]_seconds_0[3]_wide_mux_18_OUT<3>)
+     FD:D                      0.102          display_/seg_3
+    ----------------------------------------
+    Total                      3.285ns (1.086ns logic, 2.199ns route)
+                                       (33.1% logic, 66.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              2.335ns (Levels of Logic = 1)
+  Source:            btnRst (PAD)
+  Destination:       arst_ff_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: btnRst to arst_ff_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.222   0.683  btnRst_IBUF (btnRst_IBUF)
+     FDP:PRE                   0.430          arst_ff_0
+    ----------------------------------------
+    Total                      2.335ns (1.652ns logic, 0.683ns route)
+                                       (70.8% logic, 29.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_/_666hz'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            display_/an_3 (FF)
+  Destination:       an<3> (PAD)
+  Source Clock:      clock_/_666hz rising
+
+  Data Path: display_/an_3 to an<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.579  display_/an_3 (display_/an_3)
+     OBUF:I->O                 2.571          an_3_OBUF (an<3>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    7.120|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clock_/_666hz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.932|         |         |         |
+clock_/_666hz  |    3.285|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.64 secs
+ 
+--> 
+
+Total memory usage is 259388 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   21 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -30,6 +30,14 @@ module counter( // Outputs
 	reg _2hz_valid;
 	reg pauseStatus;
 	
+	initial
+		begin
+		seconds_0 = 0;
+		seconds_1 = 0;
+		minutes_0 = 0;
+		minutes_1 = 0;
+		end
+	
 	always @ (posedge clk)
 		begin
 		if(pause)
@@ -42,12 +50,11 @@ module counter( // Outputs
 			minutes_1 = 0;
 			_1hz_buffer = 0;
 			_2hz_buffer = 0;
-			pauseStatus = 0;
 			end
 		_1hz_buffer = {_1hz_buffer[0], _1hz};
 		_2hz_buffer = {_2hz_buffer[0], _2hz};
-		assign _1hz_valid = (!_1hz_buffer[1] && _1hz_buffer[0]);
-		assign _2hz_valid = (!_2hz_buffer[1] && _2hz_buffer[0]);
+		_1hz_valid = (!_1hz_buffer[1] && _1hz_buffer[0]);
+		_2hz_valid = (!_2hz_buffer[1] && _2hz_buffer[0]);
 		if(_1hz_valid && !adj)
 			begin
 			if(minutes_1 == 5 && minutes_0 == 9 && seconds_1 == 5 && seconds_0 == 9)

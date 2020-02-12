@@ -1,0 +1,6 @@
+verilog work "display.v"
+verilog work "counter.v"
+verilog work "clock.v"
+verilog work "nexys3.v"
+verilog work "stopwatch_tb.v"
+verilog work "C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v"
