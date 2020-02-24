@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\top.ncd
+OUTFILE=C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird
+LICENSE=ISE
+USER_INFO=203015155_203016297_210565169_549

@@ -1,0 +1,635 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\vga.v" into library work
+Parsing module <vga640x480>.
+Analyzing Verilog file "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v" into library work
+Parsing module <square>.
+Analyzing Verilog file "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\fpgappy_bird.v" into library work
+Parsing module <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\fpgappy_bird.v" Line 26: Port o_blanking is not connected to this instance
+
+Elaborating module <top>.
+
+Elaborating module <vga640x480>.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\vga.v" Line 35: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\vga.v" Line 36: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\vga.v" Line 62: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\vga.v" Line 65: Result of 11-bit expression is truncated to fit in 10-bit target.
+
+Elaborating module <square(IX=160,IY=120,H_SIZE=60)>.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v" Line 28: Result of 32-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v" Line 29: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v" Line 30: Result of 32-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v" Line 31: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v" Line 44: Result of 32-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v" Line 45: Result of 32-bit expression is truncated to fit in 12-bit target.
+
+Elaborating module <square(IX=320,IY=240,IY_DIR=0)>.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v" Line 28: Result of 32-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v" Line 29: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v" Line 30: Result of 32-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v" Line 31: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v" Line 44: Result of 32-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v" Line 45: Result of 32-bit expression is truncated to fit in 12-bit target.
+
+Elaborating module <square(IX=600,IY=160,H_SIZE=60)>.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v" Line 28: Result of 32-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v" Line 29: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v" Line 30: Result of 32-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v" Line 31: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v" Line 44: Result of 32-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v" Line 45: Result of 32-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\fpgappy_bird.v" Line 75: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\fpgappy_bird.v" Line 77: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\fpgappy_bird.v" Line 79: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\fpgappy_bird.v".
+INFO:Xst:3210 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\fpgappy_bird.v" line 26: Output port <o_blanking> of the instance <display> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\fpgappy_bird.v" line 26: Output port <o_active> of the instance <display> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\fpgappy_bird.v" line 26: Output port <o_screenend> of the instance <display> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <pix_stb>.
+    Found 16-bit register for signal <cnt>.
+    Found 17-bit adder for signal <n0070> created at line 20.
+    Found 12-bit comparator greater for signal <sq_a_x1[11]_GND_1_o_LessThan_4_o> created at line 75
+    Found 12-bit comparator greater for signal <sq_a_y1[11]_GND_1_o_LessThan_5_o> created at line 75
+    Found 12-bit comparator greater for signal <GND_1_o_sq_a_x2[11]_LessThan_6_o> created at line 76
+    Found 12-bit comparator greater for signal <GND_1_o_sq_a_y2[11]_LessThan_7_o> created at line 76
+    Found 12-bit comparator greater for signal <sq_b_x1[11]_GND_1_o_LessThan_9_o> created at line 77
+    Found 12-bit comparator greater for signal <sq_b_y1[11]_GND_1_o_LessThan_10_o> created at line 77
+    Found 12-bit comparator greater for signal <GND_1_o_sq_b_x2[11]_LessThan_11_o> created at line 78
+    Found 12-bit comparator greater for signal <GND_1_o_sq_b_y2[11]_LessThan_12_o> created at line 78
+    Found 12-bit comparator greater for signal <sq_c_x1[11]_GND_1_o_LessThan_14_o> created at line 79
+    Found 12-bit comparator greater for signal <sq_c_y1[11]_GND_1_o_LessThan_15_o> created at line 79
+    Found 12-bit comparator greater for signal <GND_1_o_sq_c_x2[11]_LessThan_16_o> created at line 80
+    Found 12-bit comparator greater for signal <GND_1_o_sq_c_y2[11]_LessThan_17_o> created at line 80
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred  12 Comparator(s).
+Unit <top> synthesized.
+
+Synthesizing Unit <vga640x480>.
+    Related source file is "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\vga.v".
+    Found 10-bit register for signal <v_count>.
+    Found 10-bit register for signal <h_count>.
+    Found 11-bit subtractor for signal <GND_2_o_GND_2_o_sub_6_OUT> created at line 35.
+    Found 10-bit adder for signal <v_count[9]_GND_2_o_add_21_OUT> created at line 62.
+    Found 10-bit adder for signal <h_count[9]_GND_2_o_add_22_OUT> created at line 65.
+    Found 10-bit comparator lessequal for signal <n0000> created at line 31
+    Found 10-bit comparator greater for signal <h_count[9]_GND_2_o_LessThan_2_o> created at line 31
+    Found 10-bit comparator lessequal for signal <n0005> created at line 32
+    Found 10-bit comparator greater for signal <v_count[9]_GND_2_o_LessThan_4_o> created at line 32
+    Found 10-bit comparator lessequal for signal <n0012> created at line 36
+    Found 10-bit comparator greater for signal <h_count[9]_GND_2_o_LessThan_10_o> created at line 39
+    Found 10-bit comparator greater for signal <GND_2_o_v_count[9]_LessThan_11_o> created at line 39
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   7 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <vga640x480> synthesized.
+
+Synthesizing Unit <square_1>.
+    Related source file is "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v".
+        H_SIZE = 60
+        IX = 160
+        IY = 120
+        IX_DIR = 1
+        IY_DIR = 1
+        D_WIDTH = 640
+        D_HEIGHT = 480
+    Found 12-bit register for signal <y>.
+    Found 1-bit register for signal <x_dir>.
+    Found 1-bit register for signal <y_dir>.
+    Found 12-bit register for signal <x>.
+    Found 13-bit subtractor for signal <GND_3_o_GND_3_o_sub_9_OUT> created at line 44.
+    Found 13-bit subtractor for signal <GND_3_o_GND_3_o_sub_12_OUT> created at line 45.
+    Found 12-bit adder for signal <o_x2> created at line 29.
+    Found 12-bit adder for signal <o_y2> created at line 31.
+    Found 13-bit adder for signal <n0064[12:0]> created at line 44.
+    Found 13-bit adder for signal <n0066[12:0]> created at line 45.
+    Found 12-bit subtractor for signal <o_x1> created at line 17.
+    Found 12-bit subtractor for signal <o_y1> created at line 19.
+    Found 12-bit comparator lessequal for signal <n0015> created at line 47
+    Found 12-bit comparator lessequal for signal <n0018> created at line 49
+    Found 12-bit comparator lessequal for signal <n0021> created at line 51
+    Found 12-bit comparator lessequal for signal <n0024> created at line 53
+    Summary:
+	inferred   8 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <square_1> synthesized.
+
+Synthesizing Unit <square_2>.
+    Related source file is "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v".
+        H_SIZE = 80
+        IX = 320
+        IY = 240
+        IX_DIR = 1
+        IY_DIR = 0
+        D_WIDTH = 640
+        D_HEIGHT = 480
+    Found 12-bit register for signal <y>.
+    Found 1-bit register for signal <x_dir>.
+    Found 1-bit register for signal <y_dir>.
+    Found 12-bit register for signal <x>.
+    Found 13-bit subtractor for signal <GND_4_o_GND_4_o_sub_9_OUT> created at line 44.
+    Found 13-bit subtractor for signal <GND_4_o_GND_4_o_sub_12_OUT> created at line 45.
+    Found 12-bit adder for signal <o_x2> created at line 29.
+    Found 12-bit adder for signal <o_y2> created at line 31.
+    Found 13-bit adder for signal <n0064[12:0]> created at line 44.
+    Found 13-bit adder for signal <n0066[12:0]> created at line 45.
+    Found 12-bit subtractor for signal <o_x1> created at line 17.
+    Found 12-bit subtractor for signal <o_y1> created at line 19.
+    Found 12-bit comparator lessequal for signal <n0015> created at line 47
+    Found 12-bit comparator lessequal for signal <n0018> created at line 49
+    Found 12-bit comparator lessequal for signal <n0021> created at line 51
+    Found 12-bit comparator lessequal for signal <n0024> created at line 53
+    Summary:
+	inferred   8 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <square_2> synthesized.
+
+Synthesizing Unit <square_3>.
+    Related source file is "C:\Users\152\Desktop\CSM152A\fpgappy_bird\fpgappy_bird\square.v".
+        H_SIZE = 60
+        IX = 600
+        IY = 160
+        IX_DIR = 1
+        IY_DIR = 1
+        D_WIDTH = 640
+        D_HEIGHT = 480
+    Found 12-bit register for signal <y>.
+    Found 1-bit register for signal <x_dir>.
+    Found 1-bit register for signal <y_dir>.
+    Found 12-bit register for signal <x>.
+    Found 13-bit subtractor for signal <GND_5_o_GND_5_o_sub_9_OUT> created at line 44.
+    Found 13-bit subtractor for signal <GND_5_o_GND_5_o_sub_12_OUT> created at line 45.
+    Found 12-bit adder for signal <o_x2> created at line 29.
+    Found 12-bit adder for signal <o_y2> created at line 31.
+    Found 13-bit adder for signal <n0064[12:0]> created at line 44.
+    Found 13-bit adder for signal <n0066[12:0]> created at line 45.
+    Found 12-bit subtractor for signal <o_x1> created at line 17.
+    Found 12-bit subtractor for signal <o_y1> created at line 19.
+    Found 12-bit comparator lessequal for signal <n0015> created at line 47
+    Found 12-bit comparator lessequal for signal <n0018> created at line 49
+    Found 12-bit comparator lessequal for signal <n0021> created at line 51
+    Found 12-bit comparator lessequal for signal <n0024> created at line 53
+    Summary:
+	inferred   8 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <square_3> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 28
+ 10-bit adder                                          : 2
+ 11-bit subtractor                                     : 1
+ 12-bit adder                                          : 6
+ 12-bit subtractor                                     : 6
+ 13-bit adder                                          : 6
+ 13-bit subtractor                                     : 6
+ 17-bit adder                                          : 1
+# Registers                                            : 15
+ 1-bit register                                        : 6
+ 10-bit register                                       : 2
+ 12-bit register                                       : 6
+ 17-bit register                                       : 1
+# Comparators                                          : 31
+ 10-bit comparator greater                             : 4
+ 10-bit comparator lessequal                           : 3
+ 12-bit comparator greater                             : 12
+ 12-bit comparator lessequal                           : 12
+# Multiplexers                                         : 10
+ 10-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <vga640x480>.
+The following registers are absorbed into counter <h_count>: 1 register on signal <h_count>.
+Unit <vga640x480> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 27
+ 10-bit adder                                          : 1
+ 11-bit subtractor                                     : 1
+ 12-bit adder                                          : 6
+ 12-bit subtractor                                     : 6
+ 13-bit adder                                          : 6
+ 13-bit subtractor                                     : 6
+ 17-bit adder                                          : 1
+# Counters                                             : 1
+ 10-bit up counter                                     : 1
+# Registers                                            : 105
+ Flip-Flops                                            : 105
+# Comparators                                          : 31
+ 10-bit comparator greater                             : 4
+ 10-bit comparator lessequal                           : 3
+ 12-bit comparator greater                             : 12
+ 12-bit comparator lessequal                           : 12
+# Multiplexers                                         : 10
+ 10-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <pix_stb> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cnt_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cnt_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cnt_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cnt_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cnt_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cnt_5> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cnt_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cnt_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cnt_8> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cnt_9> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cnt_10> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cnt_11> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cnt_12> of sequential type is unconnected in block <top>.
+
+Optimizing unit <top> ...
+
+Optimizing unit <vga640x480> ...
+
+Optimizing unit <square_1> ...
+
+Optimizing unit <square_2> ...
+
+Optimizing unit <square_3> ...
+WARNING:Xst:1293 - FF/Latch <sq_a_anim/x_11> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sq_a_anim/x_10> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sq_a_anim/y_11> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sq_a_anim/y_10> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sq_a_anim/y_9> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sq_b_anim/x_11> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sq_b_anim/x_10> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sq_b_anim/y_11> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sq_b_anim/y_10> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sq_b_anim/y_9> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sq_c_anim/x_11> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sq_c_anim/x_10> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sq_c_anim/y_11> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sq_c_anim/y_10> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sq_c_anim/y_9> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <sq_a_anim/x_0> in Unit <top> is equivalent to the following 5 FFs/Latches, which will be removed : <sq_a_anim/y_0> <sq_b_anim/x_0> <sq_b_anim/y_0> <sq_c_anim/x_0> <sq_c_anim/y_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 7.
+FlipFlop cnt_15 has been replicated 1 time(s)
+FlipFlop display/h_count_7 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 83
+ Flip-Flops                                            : 83
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 771
+#      GND                         : 1
+#      INV                         : 65
+#      LUT1                        : 66
+#      LUT2                        : 23
+#      LUT3                        : 28
+#      LUT4                        : 124
+#      LUT5                        : 46
+#      LUT6                        : 130
+#      MUXCY                       : 171
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 114
+# FlipFlops/Latches                : 83
+#      FD                          : 11
+#      FDR                         : 1
+#      FDRE                        : 53
+#      FDSE                        : 18
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 1
+#      OBUF                        : 10
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              83  out of  18224     0%  
+ Number of Slice LUTs:                  482  out of   9112     5%  
+    Number used as Logic:               482  out of   9112     5%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    484
+   Number with an unused Flip Flop:     401  out of    484    82%  
+   Number with an unused LUT:             2  out of    484     0%  
+   Number of fully used LUT-FF pairs:    81  out of    484    16%  
+   Number of unique control sets:         7
+
+IO Utilization: 
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    232     5%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 83    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.909ns (Maximum Frequency: 203.726MHz)
+   Minimum input arrival time before clock: 4.256ns
+   Maximum output required time after clock: 9.094ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.909ns (frequency: 203.726MHz)
+  Total number of paths / destination ports: 3832 / 226
+-------------------------------------------------------------------------
+Delay:               4.909ns (Levels of Logic = 4)
+  Source:            display/v_count_2 (FF)
+  Destination:       sq_b_anim/y_dir (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: display/v_count_2 to sq_b_anim/y_dir
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             8   0.447   1.031  display/v_count_2 (display/v_count_2)
+     LUT3:I0->O           15   0.205   1.210  display/Mmux_v_count[9]_v_count[9]_mux_28_OUT4111 (display/Mmux_v_count[9]_v_count[9]_mux_28_OUT411)
+     LUT6:I3->O            2   0.205   0.617  display/o_animate_1 (display/o_animate)
+     LUT6:I5->O            1   0.205   0.684  sq_b_anim/y_dir_glue_set (sq_b_anim/y_dir_glue_set)
+     LUT2:I0->O            1   0.203   0.000  sq_b_anim/y_dir_rstpot (sq_b_anim/y_dir_rstpot)
+     FD:D                      0.102          sq_b_anim/y_dir
+    ----------------------------------------
+    Total                      4.909ns (1.367ns logic, 3.542ns route)
+                                       (27.8% logic, 72.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 79 / 79
+-------------------------------------------------------------------------
+Offset:              4.256ns (Levels of Logic = 2)
+  Source:            btnRst (PAD)
+  Destination:       sq_b_anim/x_9 (FF)
+  Destination Clock: clk rising
+
+  Data Path: btnRst to sq_b_anim/x_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.222   1.247  btnRst_IBUF (btnRst_IBUF)
+     LUT6:I0->O           23   0.203   1.153  sq_a_anim/_n00801_1 (sq_a_anim/_n00801)
+     FDRE:R                    0.430          sq_b_anim/y_1
+    ----------------------------------------
+    Total                      4.256ns (1.855ns logic, 2.401ns route)
+                                       (43.6% logic, 56.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2190 / 5
+-------------------------------------------------------------------------
+Offset:              9.094ns (Levels of Logic = 10)
+  Source:            display/v_count_7 (FF)
+  Destination:       vgaRed<2> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: display/v_count_7 to vgaRed<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            15   0.447   1.326  display/v_count_7 (display/v_count_7)
+     LUT6:I1->O           12   0.203   1.137  display/Mmux_n003711 (y<0>)
+     LUT4:I1->O            1   0.205   0.000  Mcompar_GND_1_o_sq_b_y2[11]_LessThan_12_o_lut<0> (Mcompar_GND_1_o_sq_b_y2[11]_LessThan_12_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_GND_1_o_sq_b_y2[11]_LessThan_12_o_cy<0> (Mcompar_GND_1_o_sq_b_y2[11]_LessThan_12_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_GND_1_o_sq_b_y2[11]_LessThan_12_o_cy<1> (Mcompar_GND_1_o_sq_b_y2[11]_LessThan_12_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_GND_1_o_sq_b_y2[11]_LessThan_12_o_cy<2> (Mcompar_GND_1_o_sq_b_y2[11]_LessThan_12_o_cy<2>)
+     MUXCY:CI->O           2   0.213   0.845  Mcompar_GND_1_o_sq_b_y2[11]_LessThan_12_o_cy<3> (Mcompar_GND_1_o_sq_b_y2[11]_LessThan_12_o_cy<3>)
+     LUT6:I3->O            1   0.205   0.000  Mcompar_GND_1_o_sq_b_y2[11]_LessThan_12_o_cy<4>_G (N70)
+     MUXF7:I1->O           1   0.140   0.808  Mcompar_GND_1_o_sq_b_y2[11]_LessThan_12_o_cy<4> (Mcompar_GND_1_o_sq_b_y2[11]_LessThan_12_o_cy<4>)
+     LUT4:I1->O            1   0.205   0.579  sq_b_x1[11]_GND_1_o_AND_13_o1 (vgaRed_2_OBUF)
+     OBUF:I->O                 2.571          vgaRed_2_OBUF (vgaRed<2>)
+    ----------------------------------------
+    Total                      9.094ns (4.399ns logic, 4.695ns route)
+                                       (48.4% logic, 51.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.909|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.92 secs
+ 
+--> 
+
+Total memory usage is 258684 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   55 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+
