@@ -3,15 +3,16 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 -intstyle ise -dd _ngo -nt timestamp -uc
-C:/Users/152/CSM152A/fpgappy_bird/Nexys3.ucf -p xc6slx16-csg324-3 top.ngc
-top.ngd
+C:/Users/152/Documents/CSM152A/fpgappy_bird/Nexys3.ucf -p xc6slx16-csg324-3
+top.ngc top.ngd
 
-Reading NGO file "C:/Users/152/CSM152A/fpgappy_bird/fpgappy_bird/top.ngc" ...
+Reading NGO file
+"C:/Users/152/Documents/CSM152A/fpgappy_bird/fpgappy_bird/top.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
 Annotating constraints to design from ucf file
-"C:/Users/152/CSM152A/fpgappy_bird/Nexys3.ucf" ...
+"C:/Users/152/Documents/CSM152A/fpgappy_bird/Nexys3.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
 Done...
@@ -29,7 +30,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 162188 kilobytes
+Total memory usage is 162956 kilobytes
 
 Writing NGD file "top.ngd" ...
 Total REAL time to NGDBUILD completion:  4 sec

@@ -1,21 +1,21 @@
 //! **************************************************************************
-// Written by: Map P.68d on Mon Mar 02 13:19:22 2020
+// Written by: Map P.68d on Wed Mar 04 13:34:38 2020
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "clk" LOCATE = SITE "V10" LEVEL 1;
-COMP "btnFlap" LOCATE = SITE "B8" LEVEL 1;
 COMP "vgaGreen<0>" LOCATE = SITE "P8" LEVEL 1;
 COMP "vgaGreen<1>" LOCATE = SITE "T6" LEVEL 1;
 COMP "vgaGreen<2>" LOCATE = SITE "V6" LEVEL 1;
 COMP "Hsync" LOCATE = SITE "N6" LEVEL 1;
+COMP "btnFlap" LOCATE = SITE "B8" LEVEL 1;
 COMP "Vsync" LOCATE = SITE "P7" LEVEL 1;
-COMP "vgaBlue<0>" LOCATE = SITE "R7" LEVEL 1;
-COMP "vgaBlue<1>" LOCATE = SITE "T7" LEVEL 1;
-COMP "btnRst" LOCATE = SITE "C4" LEVEL 1;
 COMP "vgaRed<0>" LOCATE = SITE "U7" LEVEL 1;
 COMP "vgaRed<1>" LOCATE = SITE "V7" LEVEL 1;
 COMP "vgaRed<2>" LOCATE = SITE "N7" LEVEL 1;
+COMP "btnRst" LOCATE = SITE "C4" LEVEL 1;
+COMP "vgaBlue<0>" LOCATE = SITE "R7" LEVEL 1;
+COMP "vgaBlue<1>" LOCATE = SITE "T7" LEVEL 1;
 TIMEGRP sys_clk_pin = BEL "arst_ff_0" BEL "arst_ff_1" BEL "physics_stb" BEL
         "physics_cnt_0" BEL "physics_cnt_1" BEL "physics_cnt_2" BEL
         "physics_cnt_3" BEL "physics_cnt_4" BEL "physics_cnt_5" BEL
@@ -30,21 +30,30 @@ TIMEGRP sys_clk_pin = BEL "arst_ff_0" BEL "arst_ff_1" BEL "physics_stb" BEL
         "clk_dv_10" BEL "clk_dv_11" BEL "clk_dv_12" BEL "clk_dv_13" BEL
         "clk_dv_14" BEL "clk_dv_15" BEL "clk_dv_16" BEL "clk_en_d" BEL
         "step_d_flap_0" BEL "step_d_flap_1" BEL "step_d_flap_2" BEL "flap" BEL
+        "display/h_count_9" BEL "display/h_count_8" BEL "display/h_count_7"
+        BEL "display/h_count_6" BEL "display/h_count_5" BEL
+        "display/h_count_4" BEL "display/h_count_3" BEL "display/h_count_2"
+        BEL "display/h_count_1" BEL "display/h_count_0" BEL
         "display/v_count_9" BEL "display/v_count_8" BEL "display/v_count_7"
         BEL "display/v_count_6" BEL "display/v_count_5" BEL
         "display/v_count_4" BEL "display/v_count_3" BEL "display/v_count_2"
-        BEL "display/v_count_1" BEL "_bird/y_vel_0" BEL "_bird/y_vel_3" BEL
-        "_bird/y_11" BEL "_bird/y_9" BEL "_bird/y_8" BEL "_bird/y_7" BEL
-        "_bird/y_6" BEL "_bird/y_5" BEL "_bird/y_4" BEL "_bird/y_3" BEL
-        "_bird/y_2" BEL "_bird/y_1" BEL "_bird/y_0" BEL "_bird/y_vel_11" BEL
-        "_bird/y_vel_10" BEL "_bird/y_vel_8" BEL "_bird/y_vel_7" BEL
-        "_bird/y_vel_9" BEL "_bird/y_vel_5" BEL "_bird/y_vel_4" BEL
-        "_bird/y_vel_6" BEL "_bird/y_vel_2" BEL "_bird/y_vel_1" BEL
-        "display/h_count_0" BEL "display/h_count_9" BEL "display/h_count_8"
-        BEL "display/h_count_7" BEL "display/h_count_6" BEL
-        "display/h_count_5" BEL "display/h_count_4" BEL "display/h_count_3"
-        BEL "display/h_count_2" BEL "display/h_count_1" BEL
-        "display/v_count_0" BEL "clk_BUFGP/BUFG";
+        BEL "display/v_count_1" BEL "display/v_count_0" BEL
+        "_pipe/pipe_counter_3" BEL "_pipe/pipe_counter_2" BEL
+        "_pipe/pipe_counter_1" BEL "_pipe/pipe_counter_0" BEL "_bird/y_vel_11"
+        BEL "_bird/y_vel_10" BEL "_bird/y_vel_9" BEL "_bird/y_vel_8" BEL
+        "_bird/y_vel_7" BEL "_bird/y_vel_6" BEL "_bird/y_vel_5" BEL
+        "_bird/y_vel_4" BEL "_bird/y_vel_2" BEL "_bird/y_vel_1" BEL
+        "_bird/y_0" BEL "_bird/y_10" BEL "_bird/y_9" BEL "_bird/y_11" BEL
+        "_bird/y_8" BEL "_bird/y_7" BEL "_bird/y_6" BEL "_bird/y_5" BEL
+        "_bird/y_4" BEL "_bird/y_3" BEL "_bird/y_2" BEL "_bird/y_1" BEL
+        "_pipe/p1_y_8" BEL "_pipe/p1_y_7" BEL "_pipe/p1_y_6" BEL
+        "_pipe/p1_y_5" BEL "_pipe/p1_y_4" BEL "_pipe/p1_y_3" BEL
+        "_pipe/p1_y_2" BEL "_pipe/p1_y_1" BEL "_pipe/p1_y_0" BEL
+        "_pipe/p1_x_9" BEL "_pipe/p1_x_8" BEL "_pipe/p1_x_7" BEL
+        "_pipe/p1_x_6" BEL "_pipe/p1_x_5" BEL "_pipe/p1_x_4" BEL
+        "_pipe/p1_x_3" BEL "_pipe/p1_x_2" BEL "_pipe/p1_x_1" BEL
+        "_pipe/p1_x_0" BEL "_bird/y_vel_3" BEL "_bird/y_vel_0" BEL
+        "clk_BUFGP/BUFG";
 TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
 SCHEMATIC END;
 

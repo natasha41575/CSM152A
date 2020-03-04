@@ -1,5 +1,5 @@
 verilog work "vga.v"
-verilog work "square.v"
 verilog work "rectangle.v"
+verilog work "pipe.v"
 verilog work "bird.v"
 verilog work "fpgappy_bird.v"

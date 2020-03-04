@@ -1,7 +1,7 @@
 Release 14.6 Drc P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Mar 02 13:19:46 2020
+Wed Mar 04 13:24:32 2020
 
 drc -z top.ncd top.pcf
 

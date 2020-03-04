@@ -113,16 +113,19 @@ module top(
 		.o_animate(animate)
     );
 	
-	wire sq_c;
-    wire [11:0] sq_c_x1, sq_c_x2, sq_c_y1, sq_c_y2;
-	
-	reg bird_bounds;
+	wire bird_bounds;
 	wire [11:0] bird_x1, bird_x2, bird_y1, bird_y2;
 	
-	reg floor_bounds;
+	wire floor_bounds;
 	wire [11:0] floor_x1, floor_x2, floor_y1, floor_y2;
 	
-	reg sky_bounds;
+	wire sky_bounds;
+	
+	wire pipe_bounds;
+	wire [11:0] pipe_x1, pipe_x2, pipe_y1, pipe_y2;
+	
+	wire bird_die;
+	wire out_of_bounds;
 
     rectangle #(.IX(320), .IY(465), .X_SIZE(320), .Y_SIZE(15)) floor (
         .i_clk(clk), 
@@ -132,47 +135,50 @@ module top(
         .o_y1(floor_y1),
         .o_y2(floor_y2)
     );
-
-    square #(.IX(600), .IY(160), .H_SIZE(60)) sq_c_anim (
-        .i_clk(clk), 
-        .i_ani_stb(pix_stb),
-        .i_rst(rst),
-        .i_animate(animate),
-        .o_x1(sq_c_x1),
-        .o_x2(sq_c_x2),
-        .o_y1(sq_c_y1),
-        .o_y2(sq_c_y2)
-    );
 	
 	bird #(.H_SIZE(20), .IX(160), .IY(120), .GRAV(1)) _bird (
         .i_clk(clk), 
         .i_ani_stb(pix_stb),
 		.i_physics_stb(physics_stb),
-        .i_rst(rst),
+        .i_rst(rst | bird_die),
         .i_animate(animate),
 		.flap(flap),
         .o_x1(bird_x1),
         .o_x2(bird_x2),
         .o_y1(bird_y1),
-        .o_y2(bird_y2)
+        .o_y2(bird_y2),
+		.out_of_bounds(out_of_bounds)
     );    
-
-	always @* begin
-		bird_bounds = ((x > bird_x1) & (y > bird_y1) &
-			(x < bird_x2) & (y < bird_y2)) ? 1 : 0;
-		floor_bounds = ((x > floor_x1) & (y > floor_y1) &
-			(x < floor_x2) & (y < floor_y2)) ? 1 : 0;
-		sky_bounds = ~bird_bounds & ~floor_bounds;
-	end
 	
-		
+	pipe #(.X_SIZE(40), .Y_HOLE(80), .IX(680), .IY(240)) _pipe (
+		.i_clk(clk), 
+        .i_ani_stb(pix_stb),
+		.i_physics_stb(physics_stb),
+        .i_rst(rst | bird_die),
+        .p1_x1(pipe_x1),
+        .p1_x2(pipe_x2),
+        .p1_y1(pipe_y1),
+        .p1_y2(pipe_y2)
+	);
+
+	
+	assign bird_bounds = ((x > bird_x1) & (y > bird_y1) &
+			(x < bird_x2) & (y < bird_y2)) ? 1 : 0;
+	assign floor_bounds = ((x > floor_x1) & (y > floor_y1) &
+			(x < floor_x2) & (y < floor_y2)) ? 1 : 0;
+	assign pipe_bounds = ((x > pipe_x1) & (x < pipe_x2) & 
+						 ((y < pipe_y1) | (y > pipe_y2))) ? 1 : 0;
+	assign sky_bounds = (~bird_bounds & ~floor_bounds) ? 1 : 0;
+	
+	assign bird_die = (bird_bounds & pipe_bounds) | out_of_bounds;
+
 	assign vgaRed[0] = 0;
 	assign vgaRed[1] = 0;
 	assign vgaGreen[0] = 0;
 	assign vgaGreen[1] = 0;
 	assign vgaBlue[0] = 0;
     assign vgaRed[2] = bird_bounds;         // square b is red
-    assign vgaGreen[2] = floor_bounds;  // squares a and d are green
-    assign vgaBlue[1] = floor_bounds;         // square c is blue
+    assign vgaGreen[2] = pipe_bounds | floor_bounds;  // squares a and d are green
+    assign vgaBlue[1] = (~bird_bounds & ~floor_bounds & ~pipe_bounds) | floor_bounds;         // square c is blue
 endmodule
 
