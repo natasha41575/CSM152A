@@ -8,10 +8,11 @@ module top(
     output wire Vsync,       // vertical sync output
     output wire [2:0] vgaRed,    // 4-bit VGA red output
     output wire [2:0] vgaGreen,    // 4-bit VGA green output
-    output wire [1:0] vgaBlue     // 4-bit VGA blue output
+    output wire [1:0] vgaBlue,     // 4-bit VGA blue output
+	output [3:0] an,	// Digit to light up
+	output [7:0] seg	// Segments to light up
     );
-
-    //wire rst = ~btnRst;    // reset is active low on Arty & Nexys Video
+	
 	wire rst; 
 	wire arst_i;
 	reg [1:0] arst_ff;
@@ -24,8 +25,7 @@ module top(
 	reg         flap;
 	reg [2:0]   step_d_flap;
 
-
-    // generate a 25 MHz pixel strobe
+    // 25 MHz pixel strobe
     reg [15:0] pix_cnt;
     reg pix_stb;
 	
@@ -33,20 +33,45 @@ module top(
 	reg [21:0] physics_cnt; 
 	reg physics_stb;
 	
+	// 762hz seven seg display clk
+	reg [16:0] sevenseg_cnt;
+	reg seven_seg_stb;
+	
+	// Display coords
+	wire [9:0] x;  // current pixel x position: 10-bit value: 0-1023
+    wire [8:0] y;  // current pixel y position:  9-bit value: 0-511
+	wire animate;  // high when we're ready to animate at end of drawing
+	
+	// Points
+	wire [3:0] points_3;
+	wire [3:0] points_2;
+	wire [3:0] points_1;
+	wire [3:0] points_0;
+	wire point_add;
+	
+	// Game Logic
+	wire bird_die;
+	wire out_of_bounds;
+	
+	// Game hitboxes and bounds
+	wire bird_bounds;
+	wire [11:0] bird_x1, bird_x2, bird_y1, bird_y2;
+	wire floor_bounds;
+	wire [11:0] floor_x1, floor_x2, floor_y1, floor_y2;
+	wire sky_bounds;
+	wire pipe_bounds;
+	wire [11:0] pipe_x1, pipe_x2, pipe_y1, pipe_y2;
+	
+	//==Clock Divider==//
     always @(posedge clk) 
 		begin
         {pix_stb, pix_cnt} <= pix_cnt + 16'h4000;  // divide by 4: (2^16)/4 = 0x4000
 		{physics_stb, physics_cnt} <= physics_cnt + 1;
+		{seven_seg_stb, sevenseg_cnt} <= sevenseg_cnt + 1;
 		end
 
-    wire [9:0] x;  // current pixel x position: 10-bit value: 0-1023
-    wire [8:0] y;  // current pixel y position:  9-bit value: 0-511
-	wire animate;  // high when we're ready to animate at end of drawing
 
-	// ===========================================================================
-	// Asynchronous Reset
-	// ===========================================================================
-
+	//==Asynchronous Reset==//
 	assign arst_i = btnRst;
 	assign rst = arst_ff[0];
    
@@ -55,11 +80,8 @@ module top(
 			arst_ff <= 2'b11;
 		else
 			arst_ff <= {1'b0, arst_ff[1]};
-
-	// ===========================================================================
-	// timing signal for clock enable
-	// ===========================================================================
-
+	
+	//==timing signal for clock enable==//
 	assign clk_dv_inc = clk_dv + 1;
    
 	always @ (posedge clk)
@@ -76,10 +98,7 @@ module top(
 			clk_en_d <= clk_en;
 			end
 	
-	// ===========================================================================
-	// Instruction Stepping Control / Debouncing
-	// ===========================================================================
-
+	//==Instruction Stepping Control / Debouncing==//
 	always @ (posedge clk)
 		if (rst)
 			begin
@@ -90,7 +109,7 @@ module top(
 			step_d_flap[2:0]  	<= {btnFlap, step_d_flap[2:1]};
 			end
 	   
-	// Detecting posedge of btnS
+	//==Detecting posedge of btnS==//
 	wire is_btnFlap_posedge;
 	assign is_btnFlap_posedge = ~ step_d_flap[0] & step_d_flap[1];
 	always @ (posedge clk)
@@ -98,11 +117,10 @@ module top(
 			flap <= 1'b0;
 		else if (clk_en_d) 
 			flap <= is_btnFlap_posedge;
-		else 
+		else                                   
 			flap <= 0;
 
-
-    vga640x480 display (
+    vga640x480 _display (
         .i_clk(clk),
         .i_pix_stb(pix_stb),
         .i_rst(rst),
@@ -113,21 +131,29 @@ module top(
 		.o_animate(animate)
     );
 	
-	wire bird_bounds;
-	wire [11:0] bird_x1, bird_x2, bird_y1, bird_y2;
+	scoreboard _scoreboard (
+		.points_3(points_3),
+		.points_2(points_2),
+		.points_1(points_1),
+		.points_0(points_0),
+		.rst(rst),
+		.clk(clk),
+		.point_add(point_add),
+		.bird_die(bird_die)
+	);
 	
-	wire floor_bounds;
-	wire [11:0] floor_x1, floor_x2, floor_y1, floor_y2;
+	sevenseg _sevenseg (
+		.an(an),
+		.seg(seg),
+		.points_3(points_3),
+		.points_2(points_2),
+		.points_1(points_1),
+		.points_0(points_0),
+		.sevenseg_clk(seven_seg_stb)
+	);
 	
-	wire sky_bounds;
-	
-	wire pipe_bounds;
-	wire [11:0] pipe_x1, pipe_x2, pipe_y1, pipe_y2;
-	
-	wire bird_die;
-	wire out_of_bounds;
-
-    rectangle #(.IX(320), .IY(465), .X_SIZE(320), .Y_SIZE(15)) floor (
+	// Draw Floor
+    rectangle #(.IX(320), .IY(465), .X_SIZE(320), .Y_SIZE(15)) _floor (
         .i_clk(clk), 
         .i_rst(rst),
         .o_x1(floor_x1),
@@ -136,6 +162,7 @@ module top(
         .o_y2(floor_y2)
     );
 	
+	// Player-controlled Bird
 	bird #(.H_SIZE(20), .IX(160), .IY(120), .GRAV(1)) _bird (
         .i_clk(clk), 
         .i_ani_stb(pix_stb),
@@ -150,6 +177,7 @@ module top(
 		.out_of_bounds(out_of_bounds)
     );    
 	
+	// Infinitely generated pipes
 	pipe #(.X_SIZE(40), .Y_HOLE(80), .IX(680), .IY(240)) _pipe (
 		.i_clk(clk), 
         .i_ani_stb(pix_stb),
@@ -158,10 +186,11 @@ module top(
         .p1_x1(pipe_x1),
         .p1_x2(pipe_x2),
         .p1_y1(pipe_y1),
-        .p1_y2(pipe_y2)
+        .p1_y2(pipe_y2),
+		.point_add(point_add)
 	);
 
-	
+	// Check what pixel color(s) should be drawn
 	assign bird_bounds = ((x > bird_x1) & (y > bird_y1) &
 			(x < bird_x2) & (y < bird_y2)) ? 1 : 0;
 	assign floor_bounds = ((x > floor_x1) & (y > floor_y1) &
@@ -170,15 +199,17 @@ module top(
 						 ((y < pipe_y1) | (y > pipe_y2))) ? 1 : 0;
 	assign sky_bounds = (~bird_bounds & ~floor_bounds) ? 1 : 0;
 	
-	assign bird_die = (bird_bounds & pipe_bounds) | out_of_bounds;
-
 	assign vgaRed[0] = 0;
 	assign vgaRed[1] = 0;
 	assign vgaGreen[0] = 0;
 	assign vgaGreen[1] = 0;
 	assign vgaBlue[0] = 0;
-    assign vgaRed[2] = bird_bounds;         // square b is red
-    assign vgaGreen[2] = pipe_bounds | floor_bounds;  // squares a and d are green
-    assign vgaBlue[1] = (~bird_bounds & ~floor_bounds & ~pipe_bounds) | floor_bounds;         // square c is blue
+    assign vgaRed[2] = bird_bounds; 
+    assign vgaGreen[2] = pipe_bounds | floor_bounds;  
+    assign vgaBlue[1] = sky_bounds; 
+	
+	// Bird dies if it collides with a pipe or goes out of bounds
+	assign bird_die = (bird_bounds & pipe_bounds) | out_of_bounds;
+       
 endmodule
 
