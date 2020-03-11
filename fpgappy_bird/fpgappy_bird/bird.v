@@ -51,8 +51,5 @@ module bird #(
 			y <= y + y_vel;  // move down if positive y_dir
 			y_vel <= y_vel + GRAV; // this is gravity
 		end
-        //if (i_animate && i_ani_stb)
-        //begin 
-        //end
     end
 endmodule
